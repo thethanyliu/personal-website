@@ -11,6 +11,10 @@ function Navbar() {
     setNav(!nav);
   }
 
+  function closeHandler() {
+    setNav(!nav);
+  }
+
   // function scrollHandler() {
   //   if(window.scrollY>=100){
   //     setScrolling(true);
@@ -23,19 +27,20 @@ function Navbar() {
 
   return (
     <div className="nbar bg-orange">
-      <div className="px-3 justify-center items-center w-full h-full flex">
+      <div className="px-3 justify-between items-center w-full h-full flex">
         <div className="flex items-center">
-          <img src={logo} alt="personal logo" width="65px" height="65px"/>
-        </div>
-        <>
+          <img src={logo} alt="personal logo" width="65px" height="65px" />
           <ul className="text-black hidden md:flex">
-            <li>Home</li>
-            <li>About</li>
-            <li>Tech</li>
-            <li>Projects</li>
+            <li className="cursor-pointer"><Link to="intro" smooth={true} duration={500}>Home</Link></li>
+            <li className="cursor-pointer"><Link to="about" smooth={true} duration={500} offset={-50}>About</Link></li>
+            <li className="cursor-pointer"><Link to="tech" smooth={true} duration={500} offset={-100}>Tech</Link></li>
+            <li className="cursor-pointer"><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
           </ul>
-        </>
-        <div className="md:hidden" onClick={navHandler}>
+        </div>
+        <div className="hidden md:flex mr-4">
+          social media
+        </div>
+        <div className="md:hidden mr-3" onClick={navHandler}>
           {!nav ? (
             <Bars3Icon className="w-5" />
           ) : (
@@ -44,10 +49,10 @@ function Navbar() {
         </div>
       </div>
       <ul className={!nav ? "hidden" : "absolue bg-orange w-full px-6"}>
-        <li className="border-b-2 border-zinc-300">Home</li>
-        <li className="border-b-2 border-zinc-300">About</li>
-        <li className="border-b-2 border-zinc-300">Tech</li>
-        <li>Projects</li>
+        <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="intro" smooth={true} duration={500}>Home</Link></li>
+        <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="about" smooth={true} duration={500}>About</Link></li>
+        <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="tech" smooth={true} duration={500}>Tech</Link></li>
+        <li><Link onClick={closeHandler} to="projects" smooth={true} duration={500}>Projects</Link></li>
       </ul>
     </div>
   );

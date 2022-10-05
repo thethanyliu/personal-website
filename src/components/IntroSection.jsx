@@ -4,7 +4,7 @@ import Headphones from "../assets/img/headphones.gif";
 // .. for outside current dir
 
 function IntroSection() {
-  return (
+  return (<div name="intro">
     <Parallax
       className="relative h-5/6"
       bgImage={BG}
@@ -38,6 +38,7 @@ function IntroSection() {
         </div>
       </div>
     </Parallax>
+    </div>
   );
 }
 
