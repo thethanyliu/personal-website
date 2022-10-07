@@ -1,7 +1,7 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Bars3Icon, XCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import logo from "../assets/img/logo-black.png";
+import logo from "../assets/img/logo.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -26,20 +26,20 @@ function Navbar() {
   // window.addEventListener("scroll", scrollHandler);
 
   return (
-    <div className="nbar bg-orange">
+    <div className="nbar bg-storm">
       <div className="px-3 justify-between items-center w-full h-full flex">
         <div className="flex items-center">
           <img src={logo} alt="personal logo" width="65px" height="65px" />
-          <ul className="text-black hidden md:flex">
+          <ul className="text-slate-100 hidden md:flex">
             <li className="cursor-pointer"><Link to="intro" smooth={true} duration={500}>Home</Link></li>
             <li className="cursor-pointer"><Link to="about" smooth={true} duration={500} offset={-50}>About</Link></li>
             <li className="cursor-pointer"><Link to="tech" smooth={true} duration={500} offset={-100}>Tech</Link></li>
             <li className="cursor-pointer"><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
           </ul>
         </div>
-        <div className="hidden md:flex mr-4">
+        {/* <div className="text-slate-50 hidden md:flex mr-4">
           social media
-        </div>
+        </div> */}
         <div className="md:hidden mr-3" onClick={navHandler}>
           {!nav ? (
             <Bars3Icon className="w-5" />
@@ -48,7 +48,7 @@ function Navbar() {
           )}
         </div>
       </div>
-      <ul className={!nav ? "hidden" : "absolue bg-orange w-full px-6"}>
+      <ul className={!nav ? "hidden" : "absolue bg-storm w-full px-6"}>
         <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="intro" smooth={true} duration={500}>Home</Link></li>
         <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="about" smooth={true} duration={500}>About</Link></li>
         <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="tech" smooth={true} duration={500}>Tech</Link></li>

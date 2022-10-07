@@ -12,9 +12,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        "dark-purple": "#5f236b",
-        "orange": "#ed8554",
-        "pink": "#BE375F"
+        "storm": "#0c2431",
+        "teal": "#194a50",
+        "sunburst": "#BE375F",
+        "sand": "#d8a28c",
+        "cloud": "#e1dad2"
       },
     },
   },

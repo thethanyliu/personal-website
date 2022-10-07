@@ -3,6 +3,36 @@
 @tailwind utilities;
 
 
+.toggle{
+    height: 20px;
+    width: 50px;
+    border-radius: 50px;
+    background-image: linear-gradient(#BE375F, #d8a28c);
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+}
+
+.toggle.second{
+    background-image: linear-gradient(#d8a28c , #194a50);
+}
+
+.notch{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.second > .notch {
+    transform: translate(30px, 0);
+}
+
+
+
 @layer base {
     li {
         @apply p-4
@@ -12,10 +42,5 @@
 @layer components {
     .nbar {
         @apply w-screen h-16 z-10 fixed drop-shadow-lg
-    }
-
-    .map {
-        top: 10vh;
-        left: calc(50% - 15rem)
     }
 }
