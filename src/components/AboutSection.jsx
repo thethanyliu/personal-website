@@ -9,7 +9,7 @@ function AboutSection() {
           About Me
         </h3>
         <h1 className="text-5xl font-semibold text-slate-50">
-          Full time student, part time drug dealer<span className="text-cloud">.</span>
+          Full time student, part time nostalgic<span className="text-cloud">.</span>
         </h1>
         <a className="pt-5 text-left uppercase tracking-wider underline underline-offset-8 text-slate-50 cursor-pointer">Hit me up on the gram</a>
       </div>
