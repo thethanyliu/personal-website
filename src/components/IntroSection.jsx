@@ -12,7 +12,7 @@ function IntroSection() {
       backgroundRepeat: "no-repeat",
     }}
     >
-      <div className="grid md:grid-cols-2 justify-between w-screen h-screen px-0 lg:px-24 xl:px-64">
+      <div className="grid md:grid-cols-2 justify-between w-full h-screen px-0 lg:px-24 xl:px-64">
         <div className="flex flex-col justify-center items-start pl-4 sm:pl-0">
           <span className="text-4xl lg:text-5xl text-left font-bold text-slate-50 pb-3 w-full">
             Hello there, I'm Ethan<span className="text-cloud">.</span>
@@ -21,7 +21,7 @@ function IntroSection() {
             For those of you on desktop, yes that is my bitmoji, so please add
             me on snap at ethanliu666.
           </span>
-          <button className="transition ease-in-out delay-50 text-left hover:scale-110 text-slate-50 underline underline-offset-8 py-3">
+          <button className="animate-bounce text-left text-slate-50 underline underline-offset-8 py-3">
             <a
               href="https://www.youtube.com/watch?v=O91DT1pR1ew"
               target="_blank"

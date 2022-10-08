@@ -4,7 +4,8 @@ import IntroSection from "./components/IntroSection";
 import AboutSection from "./components/AboutSection";
 import Navbar from "./components/Navbar";
 import Tech from "./components/Tech/Tech";
-import Locations from "./components/Locations";
+import Locations from "./components/Locations/Locations";
+import Footer from "./components/Footer";
 // import Map from "./components/Map/Map";
 
 
@@ -25,6 +26,7 @@ function App() {
     <AboutSection />
     <Locations />
     <Tech />
+    <Footer />
     </>)
     }
   </>

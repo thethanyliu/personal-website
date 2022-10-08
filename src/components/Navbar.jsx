@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { Bars3Icon, XCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import logo from "../assets/img/logo.png";
@@ -33,6 +33,7 @@ function Navbar() {
           <ul className="text-slate-100 hidden md:flex">
             <li className="cursor-pointer"><Link to="intro" smooth={true} duration={500}>Home</Link></li>
             <li className="cursor-pointer"><Link to="about" smooth={true} duration={500} offset={-50}>About</Link></li>
+            <li className="cursor-pointer"><Link to="places" smooth={true} duration={500} offset={-50}>Places</Link></li>
             <li className="cursor-pointer"><Link to="tech" smooth={true} duration={500} offset={-100}>Tech</Link></li>
             <li className="cursor-pointer"><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
           </ul>
@@ -47,10 +48,12 @@ function Navbar() {
             <XCircleIcon className="w-5" />
           )}
         </div>
+        
       </div>
       <ul className={!nav ? "hidden" : "absolue bg-storm w-full px-6 text-slate-50"}>
         <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="intro" smooth={true} duration={500}>Home</Link></li>
         <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="about" smooth={true} duration={500}>About</Link></li>
+        <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="places" smooth={true} duration={500}>Places</Link></li>
         <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="tech" smooth={true} duration={500}>Tech</Link></li>
         <li><Link onClick={closeHandler} to="projects" smooth={true} duration={500}>Projects</Link></li>
       </ul>
