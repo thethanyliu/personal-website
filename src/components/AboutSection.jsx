@@ -18,7 +18,7 @@ function AboutSection() {
           </a>
         </button>
       </div>
-      <div className="flex my-8 lg:my-24 mx-5">
+      <div className="flex my-12 lg:my-24 mx-5">
         <p className="text-slate-300 text-lg">
           Hi there, I'm Ethan, I still enjoy Fallout 4 even after 7 years. Other
           than that, I like balling, Peaky Blinders and I have a major sweet
