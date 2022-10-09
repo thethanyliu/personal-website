@@ -3,17 +3,18 @@ import Bgif from "../assets/img/bgif.gif";
 // .. for outside current dir
 
 function IntroSection() {
-  return (<div name="intro">
+  return (
     <div
-    style={{
-      backgroundImage: `url(${BG})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-    }}
+      name="intro"
+      style={{
+        backgroundImage: `url(${BG})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <div className="grid md:grid-cols-2 justify-between w-full h-screen px-0 lg:px-24 xl:px-64">
-        <div className="flex flex-col justify-center items-start pl-4 sm:pl-0">
+        <div className="flex flex-col justify-center items-start pl-4 sm:pl-0 m-auto">
           <span className="text-4xl lg:text-5xl text-left font-bold text-slate-50 pb-3 w-full">
             Hello there, I'm Ethan<span className="text-cloud">.</span>
           </span>
@@ -31,13 +32,9 @@ function IntroSection() {
           </button>
         </div>
         <div className="hidden md:flex pr-5 justify-center items-center">
-          <img
-            src={Bgif}
-            alt="hello gif"
-          />
+          <img src={Bgif} alt="hello gif" />
         </div>
       </div>
-    </div>
     </div>
   );
 }

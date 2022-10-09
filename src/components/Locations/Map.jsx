@@ -4,6 +4,7 @@ import {
     Geography,
     Marker,
   } from "react-simple-maps";
+  import { useState } from "react";
 
   
   const markers = [
@@ -38,12 +39,6 @@ import {
       coordinates: [-95.8245, 29.7858],
     },
     {
-      id: "m6",
-      markerOffset: -15,
-      name: "GP",
-      coordinates: [-118.7885, 55.1707],
-    },
-    {
       id: "m7",
       markerOffset: -15,
       name: "Montreal",
@@ -72,6 +67,12 @@ import {
     "https://raw.githubusercontent.com/deldersveld/topojson/master/world-continents.json";
   
   function Map() {
+    const [one, setOne] = useState(false);
+
+    function toggleOne(event) {
+      setOne((prevState)=>{return (!prevState)});
+      console.log(event)
+    }
 
     return (
       <div className="bg-storm">
@@ -83,11 +84,12 @@ import {
               ))
             }
           </Geographies>
-          <Marker key={markers[0].id} coordinates={markers[0].coordinates}>
-            <circle r={2.5} fill="#fff" stroke="storm" strokeWidth={1.5}></circle>
+          <Marker key={markers[0].id} coordinates={markers[0].coordinates} onMouseEnter={toggleOne} onMouseLeave={toggleOne}>
+            <circle r={2.5} fill="#fff" stroke="storm" strokeWidth={1.5} />
+            <text textAnchor="middle" y={markers[0].markerOffset} className={one? "text-slate-50 text-sm font-semibold" : "hidden"}>{markers[0].name}</text>
           </Marker>
           <Marker key={markers[1].id} coordinates={markers[1].coordinates}>
-            <circle r={2.5} fill="#fff" stroke="storm" strokeWidth={1.5}></circle>
+            <circle r={2.5} fill="#fff" stroke="storm" strokeWidth={1.5} />
           </Marker>
           <Marker key={markers[2].id} coordinates={markers[2].coordinates}>
             <circle r={2.5} fill="#fff" stroke="storm" strokeWidth={1.5}></circle>
@@ -108,9 +110,6 @@ import {
             <circle r={2.5} fill="#fff" stroke="storm" strokeWidth={1.5}></circle>
           </Marker>
           <Marker key={markers[8].id} coordinates={markers[8].coordinates}>
-            <circle r={2.5} fill="#fff" stroke="storm" strokeWidth={1.5}></circle>
-          </Marker>
-          <Marker key={markers[9].id} coordinates={markers[9].coordinates}>
             <circle r={2.5} fill="#fff" stroke="storm" strokeWidth={1.5}></circle>
           </Marker>
           

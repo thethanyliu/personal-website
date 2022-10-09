@@ -10,7 +10,7 @@ function Locations() {
   }
 
   return (
-    <div name="places" className="flex flex-col bg-storm px-5 md:px-24 lg:px-56 xl:px-80">
+    <div name="places" className="flex flex-col bg-storm py-8 px-5 md:px-24 lg:px-56 xl:px-80">
       <>
         <h1 className="text-4xl font-semibold text-center text-slate-50 py-10">
           Where I've Lived
