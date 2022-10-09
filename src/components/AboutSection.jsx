@@ -9,8 +9,8 @@ function AboutSection() {
           About Me
         </h3>
         <h1 className="text-5xl font-semibold text-slate-50">
-          Full time student, part time nostalgic
-          <span className="text-cloud">.</span>
+          Full time student, part time 
+          <span className="text-sand"> nostalgic.</span>
         </h1>
         <button className="transition ease-in-out delay-150 hover:translate-x-[8px] pt-5 text-left uppercase tracking-wider underline underline-offset-8 text-slate-50 cursor-pointer">
           <a href="https://www.instagram.com/ethanliu8/" target="_blank">
