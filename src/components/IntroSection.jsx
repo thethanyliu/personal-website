@@ -22,7 +22,7 @@ function IntroSection() {
             For those of you on desktop, yes that is my bitmoji, so please add
             me on snap at ethanliu666.
           </span>
-          <button className="animate-bounce text-left text-slate-50 underline underline-offset-8 py-3">
+          <button className="animate-bounce text-left text-slate-50 uppercase tracking-wider underline underline-offset-8 py-3">
             <a
               href="https://www.youtube.com/watch?v=O91DT1pR1ew"
               target="_blank"
