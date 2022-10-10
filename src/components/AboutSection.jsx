@@ -1,7 +1,7 @@
 import useAnalyticsEventTracker from "./analyticsEventTracker";
 
 function AboutSection() {
-  const gaEventTracker = useAnalyticsEventTracker('Hit me up on the gram');
+  const gaEventTracker = useAnalyticsEventTracker("Instagram");
   return (
     <div
       name="about"
