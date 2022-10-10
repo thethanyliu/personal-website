@@ -1,4 +1,7 @@
+import useAnalyticsEventTracker from "./analyticsEventTracker";
+
 function AboutSection() {
+  const gaEventTracker = useAnalyticsEventTracker('Hit me up on the gram');
   return (
     <div
       name="about"
@@ -13,7 +16,7 @@ function AboutSection() {
           <span className="text-sand"> nostalgic.</span>
         </h1>
         <button className="transition ease-in-out delay-150 hover:translate-x-[8px] pt-5 text-left uppercase tracking-wider underline underline-offset-8 text-slate-50 cursor-pointer">
-          <a href="https://www.instagram.com/ethanliu8/" target="_blank">
+          <a href="https://www.instagram.com/ethanliu8/" target="_blank" onClick={()=>gaEventTracker("Hit me up on the gram")}>
             Hit me up on the gram
           </a>
         </button>

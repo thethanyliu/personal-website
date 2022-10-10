@@ -6,7 +6,10 @@ import Navbar from "./components/Navbar";
 import Tech from "./components/Tech/Tech";
 import Locations from "./components/Locations/Locations";
 import Footer from "./components/Footer";
-// import Map from "./components/Map/Map";
+
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-244956969-1";
+ReactGA.initialize(TRACKING_ID);
 
 
 function App() {
