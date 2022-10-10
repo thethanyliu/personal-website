@@ -4,7 +4,7 @@ import Bgif from "../assets/img/bgif.gif";
 // .. for outside current dir
 
 function IntroSection() {
-  const gaEventTracker = useAnalyticsEventTracker("Find out more")
+  const gaEventTracker = useAnalyticsEventTracker("Rick Roll Counter")
   return (
     <div
       name="intro"
@@ -28,7 +28,7 @@ function IntroSection() {
             <a
               href="https://www.youtube.com/watch?v=O91DT1pR1ew"
               target="_blank"
-              onClick={()=>gaEventTracker("Rick Rolled")}
+              onClick={()=>gaEventTracker("Find out more")}
             >
               Find out more
             </a>
