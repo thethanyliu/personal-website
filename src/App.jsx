@@ -8,8 +8,10 @@ import Locations from "./components/Locations/Locations";
 import Footer from "./components/Footer";
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-244956969-1";
-ReactGA.initialize(TRACKING_ID);
+function initializeReactGA() {
+  ReactGA.initialize('UA-123791717-1');
+  ReactGA.pageview('/homepage');
+}
 
 
 function App() {
