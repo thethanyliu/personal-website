@@ -8,7 +8,7 @@ import Locations from "./components/Locations/Locations";
 import Footer from "./components/Footer";
 
 import ReactGA from "react-ga";
-ReactGA.initialize("UA-123791717-1");
+ReactGA.initialize("UA-244956969-1");
 ReactGA.pageview("/homepage");
 
 function App() {
