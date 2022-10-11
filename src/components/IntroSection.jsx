@@ -1,4 +1,3 @@
-// import { useInView } from 'react-intersection-observer';
 import useAnalyticsEventTracker from "./analyticsEventTracker";
 import BG from "../assets/img/BGC.png";
 import Bgif from "../assets/img/bgif.gif";
@@ -6,7 +5,6 @@ import Bgif from "../assets/img/bgif.gif";
 
 function IntroSection() {
   const gaEventTracker = useAnalyticsEventTracker("Rick Roll Counter")
-  // const { ref:refOne, inView:oneIsVisible } = useInView();
 
   return (
     <div
@@ -27,7 +25,7 @@ function IntroSection() {
             For those of you on desktop, yes that is my bitmoji, so please add
             me on snap at ethanliu666.
           </span>
-          <button className="animate-bounce text-left text-slate-50 uppercase tracking-wider underline underline-offset-8 py-3">
+          <button className="transition ease-in-out delay-150 hover:translate-x-[8px] text-left text-slate-50 uppercase tracking-wider underline underline-offset-8 py-3">
             <a
               href="https://www.youtube.com/watch?v=O91DT1pR1ew"
               target="_blank"

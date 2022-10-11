@@ -1,3 +1,4 @@
+import { useInView } from 'react-intersection-observer';
 import TechItem from "./TechItem";
 import rea from "../../assets/logos/react.png";
 import flask from "../../assets/logos/flask.png";
@@ -7,6 +8,8 @@ import sql from "../../assets/logos/sql.png";
 import tailwind from "../../assets/logos/tailwind.png";
 
 function Tech() {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
   const tech = [
     {
       id: "t1",
@@ -41,19 +44,24 @@ function Tech() {
   ];
 
   return (
-    <div name="tech" className="bg-storm flex flex-col pt-10 pb-24 px-5 md:px-24 lg:px-56 xl:px-80">
-      <>
-        <h1 className="text-3xl font-semibold text-slate-50">
-          What I Work With
-        </h1>
-      </>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-5">
-        <TechItem title={tech[0].title} image={tech[0].image} />
-        <TechItem title={tech[1].title} image={tech[1].image} />
-        <TechItem title={tech[2].title} image={tech[2].image} />
-        <TechItem title={tech[3].title} image={tech[3].image} />
-        <TechItem title={tech[4].title} image={tech[4].image} />
-        <TechItem title={tech[5].title} image={tech[5].image} />
+    <div
+      name="tech"
+      className="bg-storm flex flex-col pt-10 pb-24 px-5 md:px-24 lg:px-56 xl:px-80"
+    >
+      <div ref={ref} className={inView? "animatefr" : ""}>
+        <>
+          <h1 className="text-3xl font-semibold text-slate-50">
+            What I Work With
+          </h1>
+        </>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-5">
+          <TechItem title={tech[0].title} image={tech[0].image} />
+          <TechItem title={tech[1].title} image={tech[1].image} />
+          <TechItem title={tech[2].title} image={tech[2].image} />
+          <TechItem title={tech[3].title} image={tech[3].image} />
+          <TechItem title={tech[4].title} image={tech[4].image} />
+          <TechItem title={tech[5].title} image={tech[5].image} />
+        </div>
       </div>
     </div>
   );

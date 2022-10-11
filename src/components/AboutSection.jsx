@@ -1,15 +1,18 @@
+import { useInView } from 'react-intersection-observer';
 import useAnalyticsEventTracker from "./analyticsEventTracker";
 
 
 function AboutSection() {
   const gaEventTracker = useAnalyticsEventTracker("Instagram");
+  const { ref:refOne, inView:oneIsVisible } = useInView({triggerOnce: true});
+  const { ref:refTwo, inView:twoIsVisible } = useInView({triggerOnce: true});
 
   return (
     <div
       name="about"
       className="bg-teal grid md:grid-cols-2 justify-center items-center px-5 md:px-24 lg:px-56 xl:px-80"
     >
-      <div className="flex flex-col items-start mt-12 md:my-12 lg:my-24 mx-5">
+      <div ref={refOne} className={`fadeupelement${oneIsVisible ? " animatefu" : ""}`}>
         <h3 className="text-left font-semibold text-md pb-3 underline underline-offset-2 text-cloud">
           About Me
         </h3>
@@ -23,7 +26,7 @@ function AboutSection() {
           </a>
         </button>
       </div>
-      <div className="flex my-12 lg:my-24 mx-5">
+      <div ref={refTwo} className={`fadeleftelement${twoIsVisible ? " animatefl" : ""}`}>
         <p className="text-slate-300 text-lg">
           Hi there, I'm Ethan, I still enjoy Fallout 4 even after 7 years. Other
           than that, I like balling, Peaky Blinders and I have a major sweet
