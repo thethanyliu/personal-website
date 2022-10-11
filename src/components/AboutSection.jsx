@@ -7,7 +7,7 @@ function AboutSection() {
       name="about"
       className="bg-teal grid md:grid-cols-2 justify-center items-center px-5 md:px-24 lg:px-56 xl:px-80"
     >
-      <div className="flex flex-col items-start mt-12 lg:my-24 mx-5">
+      <div className="flex flex-col items-start mt-12 md:my-12 lg:my-24 mx-5">
         <h3 className="text-left font-semibold text-md pb-3 underline underline-offset-2 text-cloud">
           About Me
         </h3>

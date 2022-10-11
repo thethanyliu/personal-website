@@ -54,6 +54,11 @@ const markers = [
     name: "Fushun",
     coordinates: [123.94363, 41.88669],
   },
+  {
+    id: "m11",
+    name: "Rawlins",
+    coordinates: [-107.2387, 41.7911],
+  }
 ];
 const geoUrl =
   "https://raw.githubusercontent.com/deldersveld/topojson/master/world-continents.json";
@@ -74,9 +79,9 @@ function Map() {
   const [seven, setSeven] = useState(false);
   const [eight, setEight] = useState(false);
   const [nine, setNine] = useState(false);
+  const [ten, setTen] = useState(false);
 
   function toggleOne() {
-
     setOne((prevState) => {
       return !prevState;
     });
@@ -126,6 +131,12 @@ function Map() {
 
   function toggleNine() {
     setNine((prevState) => {
+      return !prevState;
+    });
+  }
+
+  function toggleTen() {
+    setTen((prevState) => {
       return !prevState;
     });
   }
@@ -282,6 +293,22 @@ function Map() {
             style={textStyle}
           >
             {markers[8].name}
+          </text>
+        </Marker>
+        <Marker
+          key={markers[9].id}
+          coordinates={markers[9].coordinates}
+          onMouseEnter={toggleTen}
+          onMouseLeave={toggleTen}
+        >
+          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <text
+            textAnchor="middle"
+            y={offset}
+            className={ten ? "" : "hidden"}
+            style={textStyle}
+          >
+            {markers[9].name}
           </text>
         </Marker>
 

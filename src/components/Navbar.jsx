@@ -38,9 +38,6 @@ function Navbar() {
             <li className="cursor-pointer"><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
           </ul>
         </div>
-        {/* <div className="text-slate-50 hidden md:flex mr-4">
-          social media
-        </div> */}
         <div className="md:hidden mr-3" onClick={navHandler}>
           {!nav ? (
             <Bars3Icon className="w-5" />
