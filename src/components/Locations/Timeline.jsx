@@ -13,7 +13,7 @@ function Timeline() {
   return (
     <div>
       <VerticalTimeline>
-        {timeLineElements.map((element) => {
+        {timeLineElements.reverse().map((element) => {
             let isTownIcon = element.icon === "town";
           return (<VerticalTimelineElement key={element.id} icon={isTownIcon? <Town /> : <City />} iconStyle={iconStyles}>
             <h1 className="vertical-timeline-element-title">{element.title}</h1>
