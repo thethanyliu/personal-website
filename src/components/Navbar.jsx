@@ -35,7 +35,7 @@ function Navbar() {
             <li className="cursor-pointer"><Link to="about" smooth={true} duration={500} offset={-50}>About</Link></li>
             <li className="cursor-pointer"><Link to="places" smooth={true} duration={500} offset={-50}>Places</Link></li>
             <li className="cursor-pointer"><Link to="tech" smooth={true} duration={500} offset={-100}>Tech</Link></li>
-            <li className="cursor-pointer"><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
+            {/* <li className="cursor-pointer"><Link to="projects" smooth={true} duration={500}>Projects</Link></li> */}
           </ul>
         </div>
         <div className="md:hidden mr-3" onClick={navHandler}>
@@ -52,7 +52,7 @@ function Navbar() {
         <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="about" smooth={true} duration={500}>About</Link></li>
         <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="places" smooth={true} duration={500}>Places</Link></li>
         <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="tech" smooth={true} duration={500}>Tech</Link></li>
-        <li><Link onClick={closeHandler} to="projects" smooth={true} duration={500}>Projects</Link></li>
+        {/* <li><Link onClick={closeHandler} to="projects" smooth={true} duration={500}>Projects</Link></li> */}
       </ul>
     </div>
   );
