@@ -19,7 +19,7 @@ function IntroSection() {
       }}
     >
       <div className="grid md:grid-cols-2 justify-between w-full h-screen px-0 lg:px-24 xl:px-64">
-        <div className="flex flex-col justify-center items-start pl-4 sm:pl-0 m-auto">
+        <div className="flex flex-col justify-center items-start pl-4 md:pl-0 m-auto">
           <span className="text-4xl lg:text-5xl text-left font-bold text-slate-50 pb-3 w-full">
             Hello there, I'm Ethan<span className="text-cloud">.</span>
           </span>

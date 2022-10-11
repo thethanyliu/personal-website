@@ -311,15 +311,6 @@ function Map() {
             {markers[9].name}
           </text>
         </Marker>
-
-        {/* //   {markers.map((marker) => ( */}
-        {/* //     <Marker key={marker.id} coordinates={marker.coordinates}> */}
-        {/* //       <circle r={2.5} fill="#fff" stroke="#0f0f0f" strokeWidth={1.5}/> */}
-        {/* <text textAnchor="middle" y={marker.markerOffset}>
-        //         {marker.name}
-        //       </text> */}
-        {/* //     </Marker> */}
-        {/* ))} */}
       </ComposableMap>
     </div>
   );
