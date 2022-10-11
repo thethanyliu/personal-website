@@ -43,9 +43,3 @@ body{
         @apply p-4
     }
 }
-
-@layer components {
-    .nbar {
-        @apply w-screen h-16 z-10 fixed drop-shadow-lg
-    }
-}

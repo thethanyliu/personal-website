@@ -1,3 +1,4 @@
+// import { useInView } from 'react-intersection-observer';
 import useAnalyticsEventTracker from "./analyticsEventTracker";
 import BG from "../assets/img/BGC.png";
 import Bgif from "../assets/img/bgif.gif";
@@ -5,6 +6,8 @@ import Bgif from "../assets/img/bgif.gif";
 
 function IntroSection() {
   const gaEventTracker = useAnalyticsEventTracker("Rick Roll Counter")
+  // const { ref:refOne, inView:oneIsVisible } = useInView();
+
   return (
     <div
       name="intro"
