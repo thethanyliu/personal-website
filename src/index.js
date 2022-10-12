@@ -1,8 +1,3 @@
-// first file to execute
-// Backdrop for map
-// Loading screen
-// Projects
-// Current Stuff
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
