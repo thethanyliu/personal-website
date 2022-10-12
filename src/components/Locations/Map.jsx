@@ -58,7 +58,12 @@ const markers = [
     id: "m11",
     name: "Rawlins",
     coordinates: [-107.2387, 41.7911],
-  }
+  },
+  {
+    id: "m12",
+    name: "Dawson Creek",
+    coordinates: [-120.2377, 55.7596],
+  },
 ];
 const geoUrl =
   "https://raw.githubusercontent.com/deldersveld/topojson/master/world-continents.json";
@@ -80,6 +85,7 @@ function Map() {
   const [eight, setEight] = useState(false);
   const [nine, setNine] = useState(false);
   const [ten, setTen] = useState(false);
+  const [eleven, setEleven] = useState(false);
 
   function toggleOne() {
     setOne((prevState) => {
@@ -137,6 +143,12 @@ function Map() {
 
   function toggleTen() {
     setTen((prevState) => {
+      return !prevState;
+    });
+  }
+
+  function toggleEleven() {
+    setEleven((prevState) => {
       return !prevState;
     });
   }
@@ -309,6 +321,22 @@ function Map() {
             style={textStyle}
           >
             {markers[9].name}
+          </text>
+        </Marker>
+        <Marker
+          key={markers[10].id}
+          coordinates={markers[10].coordinates}
+          onMouseEnter={toggleEleven}
+          onMouseLeave={toggleEleven}
+        >
+          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <text
+            textAnchor="middle"
+            y={offset}
+            className={eleven ? "" : "hidden"}
+            style={textStyle}
+          >
+            {markers[10].name}
           </text>
         </Marker>
       </ComposableMap>
