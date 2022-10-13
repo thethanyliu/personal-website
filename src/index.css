@@ -3,140 +3,144 @@
 @tailwind utilities;
 
 @layer base {
-    li {
-        @apply p-4
-    }
+  li {
+    @apply p-4;
+  }
 }
 
-body{
-    background-color: "storm";
+body {
+  background-color: "storm";
 }
 
-.toggle{
-    height: 20px;
-    width: 50px;
-    border-radius: 50px;
-    background-image: linear-gradient(#BE375F, #d8a28c);
-    position: relative;
-    cursor: pointer;
-    margin: auto;
+.toggle {
+  height: 20px;
+  width: 50px;
+  border-radius: 50px;
+  background-image: linear-gradient(#be375f, #d8a28c);
+  position: relative;
+  cursor: pointer;
+  margin: auto;
 }
 
-.toggle.second{
-    background-image: linear-gradient(#194a50, #d8a28c);
+.toggle.second {
+  background-image: linear-gradient(#194a50, #d8a28c);
 }
 
-.notch{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
-    z-index: 1;
-    transition: all 0.3s ease-in-out;
+.notch {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .second > .notch {
-    transform: translate(30px, 0);
+  transform: translate(30px, 0);
 }
 
-
 .fadeupelement {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 3rem 1.25rem 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 3rem 1.25rem 0 1.25rem;
 }
 
 @media (min-width: 768px) {
-    .fadeupelement {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
+  .fadeupelement {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 @media (min-width: 976px) {
-    .fadeupelement {
-        margin-top: 6rem/* 96px */;
-        margin-bottom: 6rem/* 96px */;
-    }
+  .fadeupelement {
+    margin-top: 6rem /* 96px */;
+    margin-bottom: 6rem /* 96px */;
+  }
 }
 
-
-.animatefu {
+@media (min-width: 768px) {
+  .animatefu {
     animation-duration: 1s;
     animation-name: fadeup;
+  }
 }
 
-@keyframes fadeup{
-    from{
-        opacity: 0;
-        transform: translate3d(0 , 25%, 0);
-    }
-    to{
-        opacity: 1;
-        transform: none;
-    }
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 25%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-
-.fadeleftelement{
-    display: flex;
-    margin: 3rem 1.25rem 3rem 1.25rem;
+.fadeleftelement {
+  display: flex;
+  margin: 3rem 1.25rem 3rem 1.25rem;
 }
 
 @media (min-width: 976px) {
-    .fadeleftelement {
-        margin-top: 6rem/* 96px */;
-        margin-bottom: 6rem/* 96px */;
-    }
+  .fadeleftelement {
+    margin-top: 6rem /* 96px */;
+    margin-bottom: 6rem /* 96px */;
+  }
 }
 
-.animatefl {
+@media (min-width: 768px) {
+  .animatefl {
     animation-duration: 1s;
     animation-name: fadeleft;
+  }
 }
 
-@keyframes fadeleft{
-    from{
-        opacity: 0;
-        transform: translate3d(50% , 0, 0);
-    }
-    to{
-        opacity: 1;
-        transform: none;
-    }
+@keyframes fadeleft {
+  from {
+    opacity: 0;
+    transform: translate3d(50%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-
-.animatefd {
+@media (min-width: 768px) {
+  .animatefd {
     animation-duration: 1s;
     animation-name: fadedown;
+  }
 }
 
-@keyframes fadedown{
-    from{
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+@keyframes fadedown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animatefr {
+@media (min-width: 768px) {
+  .animatefr {
     animation-duration: 1s;
     animation-name: faderight;
+  }
 }
 
-@keyframes faderight{
-    from{
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
+@keyframes faderight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
