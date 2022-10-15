@@ -13,7 +13,7 @@ function AboutSection() {
       className="bg-teal grid md:grid-cols-2 justify-center items-center px-5 md:px-24 lg:px-56 xl:px-80"
     >
       <div ref={refOne} className={`fadeupelement${oneIsVisible ? " animatefu" : ""}`}>
-        <h3 className="text-left font-semibold text-md pb-3 underline underline-offset-2 text-cloud">
+        <h3 className="text-left font-semibold uppercase text-md pb-3 underline underline-offset-2 text-cloud">
           About Me
         </h3>
         <h1 className="text-5xl font-semibold text-slate-50">

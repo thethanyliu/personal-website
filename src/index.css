@@ -144,3 +144,10 @@ body {
     transform: translateX(0);
   }
 }
+
+.underline-full{
+  border-bottom: 1px;
+  border-color: white;
+  width: 100%;
+  display: block;
+}
