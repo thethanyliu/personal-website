@@ -4,8 +4,8 @@ import rea from "../../assets/logos/react.png";
 import flask from "../../assets/logos/flask.png";
 import git from "../../assets/logos/git.png";
 import github from "../../assets/logos/github.png";
-import sql from "../../assets/logos/sql.png";
-import tailwind from "../../assets/logos/tailwind.png";
+import sql from "../../assets/logos/mysql.png";
+import tailwind from "../../assets/logos/tailwindcss.png";
 
 function Tech() {
   const { ref, inView } = useInView({ triggerOnce: true });
