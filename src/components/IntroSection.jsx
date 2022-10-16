@@ -19,10 +19,10 @@ function IntroSection() {
       <div className="grid md:grid-cols-2 justify-between w-full h-screen px-0 lg:px-24 xl:px-64">
         <div className="flex flex-col relative justify-center items-start pl-4 md:pl-0 m-auto">
         <span className="z-10 text-md text-left font-bold text-slate-50 w-full">
-            Hello there, it's moi,
+            Hello there, I'm
           </span>
           <span className="text-5xl lg:text-6xl text-left font-bold text-slate-50 pb-3 w-full z-10">
-            Ethan<span className="text-cloud">.</span>
+            Ethan Liu<span className="text-cloud">.</span>
           </span>
           <span className="text-left text-slate-50 text-lg w-full pb-5">
             For those of you on desktop, yes that is my bitmoji, so please add
