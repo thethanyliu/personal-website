@@ -5,7 +5,6 @@ import logo from "../assets/img/logo.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
-  // const [scrolling, setScrolling] = useState(false);
 
   function navHandler() {
     setNav(!nav);
@@ -26,7 +25,7 @@ function Navbar() {
   // window.addEventListener("scroll", scrollHandler);
 
   return (
-    <div className="bg-storm w-screen h-16 z-10 fixed drop-shadow-lg">
+    <div className="bg-storm w-screen h-16 z-20 fixed drop-shadow-lg">
       <div className="px-3 justify-between items-center w-full h-full flex">
         <div className="flex items-center">
           <img src={logo} alt="personal logo" width="65px" height="65px" />
