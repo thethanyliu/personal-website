@@ -56,21 +56,22 @@ body {
 
 @media (min-width: 976px) {
   .fadeupelement {
-    margin-top: 6rem /* 96px */;
-    margin-bottom: 6rem /* 96px */;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .animatefu {
     animation-duration: 1s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-name: fadeup;
   }
 }
 
 @keyframes fadeup {
   from {
-    opacity: 0;
+    visibility: hidden;
     transform: translate3d(0, 25%, 0);
   }
   to {
@@ -86,21 +87,22 @@ body {
 
 @media (min-width: 976px) {
   .fadeleftelement {
-    margin-top: 6rem /* 96px */;
-    margin-bottom: 6rem /* 96px */;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .animatefl {
     animation-duration: 1s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-name: fadeleft;
   }
 }
 
 @keyframes fadeleft {
   from {
-    opacity: 0;
+    visibility: hidden;
     transform: translate3d(50%, 0, 0);
   }
   to {
@@ -112,13 +114,14 @@ body {
 @media (min-width: 768px) {
   .animatefd {
     animation-duration: 1s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-name: fadedown;
   }
 }
 
 @keyframes fadedown {
   from {
-    opacity: 0;
+    visibility: hidden;
     transform: translateY(-30px);
   }
   to {
@@ -130,24 +133,18 @@ body {
 @media (min-width: 768px) {
   .animatefr {
     animation-duration: 1s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-name: faderight;
   }
 }
 
 @keyframes faderight {
   from {
-    opacity: 0;
+    visibility: hidden;
     transform: translateX(-30px);
   }
   to {
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.underline-full{
-  border-bottom: 1px;
-  border-color: white;
-  width: 100%;
-  display: block;
 }
