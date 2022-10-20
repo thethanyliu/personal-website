@@ -1,2 +1,0 @@
-Color palette: Sunrise
-Storm: #0c2431 | Teal: #194a50 | Sunburst: #d37556 | Sand: #d8a28c | Cloud: #dde7ee
