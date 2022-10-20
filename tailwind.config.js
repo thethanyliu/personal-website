@@ -16,7 +16,7 @@ module.exports = {
         "teal": "#194a50",
         "sunburst": "#BE375F",
         "sand": "#d8a28c",
-        "cloud": "#e1dad2"
+        "cloud": "#dde7ee"
       },
     },
   },
