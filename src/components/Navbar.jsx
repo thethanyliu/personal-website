@@ -34,8 +34,6 @@ function Navbar() {
             <li className="cursor-pointer"><Link to="about" smooth={true} duration={500} offset={-50}>About</Link></li>
             <li className="cursor-pointer"><Link to="tech" smooth={true} duration={500} offset={-100}>Tech</Link></li>
             <li className="cursor-pointer"><Link to="contact" smooth={true} duration={500} offset={-100}>Contact</Link></li>
-            {/* <li className="cursor-pointer"><Link to="places" smooth={true} duration={500} offset={-50}>Places</Link></li> */}
-            {/* <li className="cursor-pointer"><Link to="projects" smooth={true} duration={500}>Projects</Link></li> */}
           </ul>
         </div>
         <div className="md:hidden mr-3" onClick={navHandler}>
