@@ -28,12 +28,6 @@ const Contact = () => {
       </div>
       <div ref={refTwo} className={twoInView? "animatefr": ""}>
         <a
-          // style={{
-          //   backgroundImage: `url(${email})`,
-          //   backgroundPosition: "37% 50%",
-          //   backgroundRepeat: "no-repeat",
-          //   backgroundSize: "20px",
-          // }}
           className="flex transition ease-in-out delay-150 hover:translate-x-[8px] w-max relative text-center text-slate-50 uppercase border-b-2 border-zinc-300 pb-1 tracking-wider"
           href="mailto:ethanliu549@gmail.com"
           target="_blank"
