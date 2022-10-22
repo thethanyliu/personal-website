@@ -1,13 +1,10 @@
-import { useInView } from "react-intersection-observer";
 import Linkedin from "../assets/logos/linkedin.png";
 import Githubblue from "../assets/logos/githubblue.png";
 
 function Footer() {
-  const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
     <div className="bg-storm flex flex-col w-full z-10 justify-center items-center px-5 md:px-24 lg:px-56 xl:px-80">
-      <div ref={ref} className={inView? "animatefu" : ""}>
         <div className="pb-3">
           <h1 className="text-center text-[#a9a9a9] text-2xl font-mono">Follow Me</h1>
         </div>
@@ -28,7 +25,6 @@ function Footer() {
             &copy; Created by Ethan Liu. All Rights Reserved.
           </h2>
         </div>
-      </div>
     </div>
   );
 }
