@@ -65,7 +65,7 @@ body {
 @keyframes fadeup {
   from {
     visibility: hidden;
-    transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 15%, 0);
   }
   to {
     opacity: 1;
