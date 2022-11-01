@@ -1,7 +1,6 @@
 import useAnalyticsEventTracker from "./analyticsEventTracker";
 import BG from "../assets/img/BGC.png";
 import Bgif from "../assets/img/bgif.gif";
-// .. for outside current dir
 
 function IntroSection() {
   const gaEventTracker = useAnalyticsEventTracker("Rick Roll Counter")
