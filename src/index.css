@@ -57,7 +57,7 @@ body {
 @media (min-width: 768px) {
   .animatefu {
     animation-duration: 1s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: ease-in-out;
     animation-name: fadeup;
   }
 }
@@ -65,7 +65,7 @@ body {
 @keyframes fadeup {
   from {
     visibility: hidden;
-    transform: translate3d(0, 15%, 0);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -81,7 +81,7 @@ body {
 @media (min-width: 768px) {
   .animatefl {
     animation-duration: 1s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: ease-in-out;
     animation-name: fadeleft;
   }
 }
@@ -89,7 +89,7 @@ body {
 @keyframes fadeleft {
   from {
     visibility: hidden;
-    transform: translate3d(20%, 0, 0);
+    transform: translateX(30px);
   }
   to {
     opacity: 1;
@@ -100,7 +100,7 @@ body {
 @media (min-width: 768px) {
   .animatefd {
     animation-duration: 1s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: ease-in-out;
     animation-name: fadedown;
   }
 }
@@ -119,7 +119,7 @@ body {
 @media (min-width: 768px) {
   .animatefr {
     animation-duration: 1s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: ease-in-out;
     animation-name: faderight;
   }
 }
