@@ -48,7 +48,7 @@ function Tech() {
       name="tech"
       className="bg-storm flex flex-col pt-10 pb-24 px-5 md:px-24 lg:px-56 xl:px-80"
     >
-      <div ref={ref} className={inView? "animatefd" : ""}>
+      <div ref={ref} className={`animatefd${inView? " appearfd" : ""}`}>
         <>
           <h1 className="text-3xl font-semibold text-slate-50">
             What I Work With

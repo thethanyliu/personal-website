@@ -54,22 +54,16 @@ body {
   }
 }
 
+
 @media (min-width: 768px) {
   .animatefu {
-    animation-duration: 1s;
-    transition-timing-function: ease-in-out;
-    animation-name: fadeup;
-  }
-}
-
-@keyframes fadeup {
-  from {
-    visibility: hidden;
+    opacity: 0;
     transform: translateY(30px);
+    transition: all 800ms ease-in-out;
   }
-  to {
+  .animatefu.appearfu{
     opacity: 1;
-    transform: none;
+    transform: translateY(0);
   }
 }
 
@@ -80,13 +74,17 @@ body {
 
 @media (min-width: 768px) {
   .animatefl {
-    animation-duration: 1s;
-    transition-timing-function: ease-in-out;
-    animation-name: fadeleft;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 800ms ease-in-out;
+  }
+  .animatefl.appearfl{
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-@keyframes fadeleft {
+/* @keyframes fadeleft {
   from {
     visibility: hidden;
     transform: translateX(30px);
@@ -95,41 +93,27 @@ body {
     opacity: 1;
     transform: none;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .animatefd {
-    animation-duration: 1s;
-    transition-timing-function: ease-in-out;
-    animation-name: fadedown;
-  }
-}
-
-@keyframes fadedown {
-  from {
-    visibility: hidden;
+    opacity: 0;
     transform: translateY(-20px);
+    transition: all 800ms ease-in-out;
   }
-  to {
+  .animatefd.appearfd{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0)
   }
 }
 
 @media (min-width: 768px) {
   .animatefr {
-    animation-duration: 1s;
-    transition-timing-function: ease-in-out;
-    animation-name: faderight;
-  }
-}
-
-@keyframes faderight {
-  from {
-    visibility: hidden;
+    opacity: 0;
     transform: translateX(-20px);
+    transition: all 800ms ease-in-out;
   }
-  to {
+  .animatefr.appearfr {
     opacity: 1;
     transform: translateX(0);
   }

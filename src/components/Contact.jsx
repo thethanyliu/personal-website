@@ -12,7 +12,7 @@ const Contact = () => {
       name="contact"
       className="bg-storm flex flex-col items-center pb-20 px-5 md:px-24 lg:px-56 xl:px-80"
     >
-      <div ref={refOne} className={oneInView ? "animatefu" : ""}>
+      <div ref={refOne} className={`animatefu ${oneInView? " appearfu" : ""}`}>
         <h2 className="text-cloud font-semibold uppercase text-center underline underline-offset-2 pb-3">
           Contact
         </h2>
@@ -26,7 +26,7 @@ const Contact = () => {
           ethanliu549@gmail.
         </p>
       </div>
-      <div ref={refTwo} className={twoInView? "animatefr": ""}>
+      <div ref={refTwo} className={`animatefr ${twoInView? " appearfr" : ""}`}>
         <a
           className="flex transition ease-in-out delay-150 hover:translate-x-[8px] w-max relative text-center text-slate-50 uppercase border-b-2 border-zinc-300 pb-1 tracking-wider"
           href="mailto:ethanliu549@gmail.com"
