@@ -18,7 +18,7 @@ function AboutSection() {
     >
       <div
         ref={refOne}
-        className={`fadeupelement animatefu${oneIsVisible ? " appearfu" : ""}`}
+        className={`flex flex-col items-start mt-12 mx-5 md:my-[3.5rem] animatefu${oneIsVisible ? " appearfu" : ""}`}
       >
         <h3 className="text-left font-semibold uppercase text-md pb-3 underline underline-offset-2 text-cloud">
           About Me
@@ -45,7 +45,7 @@ function AboutSection() {
       </div>
       <div
         ref={refTwo}
-        className={`fadeleftelement animatefl${twoIsVisible ? " appearfl" : ""}`}
+        className={`flex my-12 mx-5 animatefl${twoIsVisible ? " appearfl" : ""}`}
       >
         <p className="text-slate-300 text-lg">
           Hi there, I'm Ethan, I still enjoy Fallout 4 even after 7 years. Other
