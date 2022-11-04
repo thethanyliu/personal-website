@@ -54,7 +54,6 @@ body {
   }
 }
 
-
 @media (min-width: 768px) {
   .animatefu {
     opacity: 0;
@@ -83,17 +82,6 @@ body {
     transform: translateX(0);
   }
 }
-
-/* @keyframes fadeleft {
-  from {
-    visibility: hidden;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-} */
 
 @media (min-width: 768px) {
   .animatefd {
