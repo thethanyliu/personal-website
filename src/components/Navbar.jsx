@@ -46,10 +46,10 @@ function Navbar() {
         
       </div>
       <ul className={!nav ? "hidden" : "absolue bg-storm w-full px-6 text-slate-50"}>
-        <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="intro" smooth={true} duration={500}>Home</Link></li>
-        <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="about" smooth={true} duration={500}>About</Link></li>
-        <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="tech" smooth={true} duration={500}>Tech</Link></li>
-        <li className="border-b-2 border-zinc-300"><Link onClick={closeHandler} to="contact" smooth={true} duration={500}>Contact</Link></li>
+        <li className="border-b-2 border-zinc-300 cursor-pointer"><Link onClick={closeHandler} to="intro" smooth={true} duration={500}>Home</Link></li>
+        <li className="border-b-2 border-zinc-300 cursor-pointer"><Link onClick={closeHandler} to="about" smooth={true} duration={500}>About</Link></li>
+        <li className="border-b-2 border-zinc-300 cursor-pointer"><Link onClick={closeHandler} to="tech" smooth={true} duration={500}>Tech</Link></li>
+        <li className="border-b-2 border-zinc-300 cursor-pointer"><Link onClick={closeHandler} to="contact" smooth={true} duration={500}>Contact</Link></li>
       </ul>
     </div>
   );
