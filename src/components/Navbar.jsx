@@ -38,9 +38,9 @@ function Navbar() {
         </div>
         <div className="md:hidden mr-3" onClick={navHandler}>
           {!nav ? (
-            <Bars3Icon className="w-5" />
+            <Bars3Icon className="w-5" fill="none" stroke="#d4d4d8"/>
           ) : (
-            <XCircleIcon className="w-5" />
+            <XCircleIcon className="w-5" fill="none" stroke="#d4d4d8"/>
           )}
         </div>
         
