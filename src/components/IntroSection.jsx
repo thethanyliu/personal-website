@@ -1,22 +1,12 @@
 import useAnalyticsEventTracker from "./analyticsEventTracker";
 import Typical from "react-typical";
-import BG from "../assets/img/BGC.png";
 import Bgif from "../assets/img/bgif.gif";
 
 function IntroSection() {
   const gaEventTracker = useAnalyticsEventTracker("Rick Roll Counter");
 
   return (
-    <div
-      name="intro"
-      style={{
-        backgroundImage: `url(${BG})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="grid md:grid-cols-2 justify-between w-full h-screen px-0 lg:px-24 xl:px-64">
+      <div name="intro" className="grid md:grid-cols-2 justify-between w-full h-screen bg-storm px-0 lg:px-24 xl:px-64">
         <div className="flex flex-col relative justify-center items-start pl-4 md:pl-0 m-auto">
           <span className="z-10 text-md text-left font-bold text-slate-50 w-full">
             Hello there, I'm
@@ -49,7 +39,6 @@ function IntroSection() {
           <img src={Bgif} alt="hello gif" />
         </div>
       </div>
-    </div>
   );
 }
 
