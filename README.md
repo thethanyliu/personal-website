@@ -1,4 +1,6 @@
-# Web application link: https://ethanliu666.github.io/personal-website/
+# Web application link: 
+
+https://ethanliu666.github.io/personal-website/
 
 # Getting Started with Create React App
 
