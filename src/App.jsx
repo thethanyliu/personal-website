@@ -27,7 +27,7 @@ function App() {
       {loading ? (
         <LoadingScreen />
       ) : (
-        <>
+        <div className="dark:bg-storm dark:text-slate-100 bg-[#eddcd2] text-stone-900">
           <Navbar />
           <IntroSection />
           <AboutSection />
@@ -35,7 +35,7 @@ function App() {
           <Tech />
           <Contact />
           <Footer />
-        </>
+        </div>
       )}
     </>
   );

@@ -23,12 +23,12 @@ function AboutSection() {
         <h3 className="text-left font-semibold uppercase text-md pb-3 underline underline-offset-2 text-cloud">
           About Me
         </h3>
-        <h1 className="text-5xl font-semibold text-slate-50">
+        <h1 className="text-5xl font-semibold ">
           Full time student, part time
           <span className="text-sand"> nostalgic.</span>
         </h1>
         <a
-          className="flex transition ease-in-out delay-150 hover:translate-x-[8px] pt-5 pb-1 text-left uppercase tracking-wider border-b-2 text-slate-50 cursor-pointer"
+          className="flex transition ease-in-out delay-150 hover:translate-x-[8px] pt-5 pb-1 text-left uppercase tracking-wider border-b-2 cursor-pointer"
           href="https://www.instagram.com/ethanliu8/"
           target="_blank"
           onClick={() => gaEventTracker("Hit me up on the gram")}
@@ -47,7 +47,7 @@ function AboutSection() {
         ref={refTwo}
         className={`flex my-12 mx-5 animatefl${twoIsVisible ? " appearfl" : ""}`}
       >
-        <p className="text-slate-300 text-lg">
+        <p className="text-lg">
           Hi there, I'm Ethan, I still enjoy Fallout 4 even after 7 years. Other
           than that, I like balling, Peaky Blinders and I have a major sweet
           tooth. I currently am a first year CS student at the University of

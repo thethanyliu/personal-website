@@ -154,7 +154,7 @@ function Map() {
   }
 
   return (
-    <div className="bg-storm">
+    <>
       <ComposableMap>
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
@@ -340,7 +340,7 @@ function Map() {
           </text>
         </Marker>
       </ComposableMap>
-    </div>
+    </>
   );
 }
 

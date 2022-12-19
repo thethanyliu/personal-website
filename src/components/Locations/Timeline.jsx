@@ -16,8 +16,8 @@ function Timeline() {
         {timeLineElements.reverse().map((element) => {
             let isTownIcon = element.icon === "town";
           return (<VerticalTimelineElement key={element.id} icon={isTownIcon? <Town /> : <City />} iconStyle={iconStyles}>
-            <h1 className="vertical-timeline-element-title">{element.title}</h1>
-            <p className="vertical-timeline-element-subtitle">{element.time}</p>
+            <h1 className="dark:text-stone-900">{element.title}</h1>
+            <p className="dark:text-stone-900">{element.time}</p>
           </VerticalTimelineElement>);
         })}
       </VerticalTimeline>
