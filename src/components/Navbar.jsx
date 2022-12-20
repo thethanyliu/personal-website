@@ -140,12 +140,12 @@ function Navbar() {
             Contact
           </Link>
         </li>
-        {/* <li>
+        <li className="flex">
           <div
             onClick={handleThemeButton}
             className={
               theme === "dark"
-                ? "justify-center items-center bg-orange-300 p-2 mr-4 rounded-md"
+                ? "w-fit bg-orange-300 p-2 rounded-md"
                 : "hidden"
             }
           >
@@ -155,13 +155,13 @@ function Navbar() {
             onClick={handleThemeButton}
             className={
               theme === "light"
-                ? "bg-violet-300 p-2 mr-4 rounded-md"
+                ? "w-fit bg-violet-300 p-2 rounded-md"
                 : "hidden"
             }
           >
             <MoonIcon className="w-5" fill="none" />
           </div>
-        </li> */}
+        </li>
       </ul>
     </div>
   );
