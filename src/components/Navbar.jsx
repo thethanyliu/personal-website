@@ -84,7 +84,7 @@ function Navbar() {
           onClick={handleThemeButton}
           className={
             theme === "dark"
-              ? "hidden md:flex bg-orange-300 p-2 mr-4 rounded-md"
+              ? "hidden md:flex bg-orange-400 p-2 mr-4 rounded-md"
               : "hidden"
           }
         >
@@ -94,7 +94,7 @@ function Navbar() {
           onClick={handleThemeButton}
           className={
             theme === "light"
-              ? "hidden md:flex bg-violet-300 p-2 mr-4 rounded-md"
+              ? "hidden md:flex bg-violet-400 p-2 mr-4 rounded-md"
               : "hidden"
           }
         >

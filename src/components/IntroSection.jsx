@@ -1,6 +1,7 @@
 import useAnalyticsEventTracker from "./analyticsEventTracker";
 import Typical from "react-typical";
-import Bgif from "../assets/img/bgif.gif";
+import Bgifdark from "../assets/img/bgif-dark.gif";
+import Bgiflight from "../assets/img/bgif-light.gif"
 
 function IntroSection() {
   const gaEventTracker = useAnalyticsEventTracker("Rick Roll Counter");
@@ -36,7 +37,8 @@ function IntroSection() {
           </button>
         </div>
         <div className="hidden md:flex pr-5 justify-center items-center">
-          <img className="rounded-md" src={Bgif} alt="hello gif" />
+          <img className="hidden dark:flex rounded-md" src={Bgifdark} alt="hello gif" />
+          <img className="flex dark:hidden rounded-md" src={Bgiflight} alt="hello gif" />
         </div>
       </div>
   );
