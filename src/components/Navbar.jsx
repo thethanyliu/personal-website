@@ -102,9 +102,9 @@ function Navbar() {
         </div>
         <div className="md:hidden mr-3" onClick={navHandler}>
           {!nav ? (
-            <Bars3Icon className="w-5" fill="none" stroke="#d4d4d8" />
+            <Bars3Icon className="w-5" fill="none" stroke={theme === "dark" ? "#d4d4d8" : "#1a120b"} />
           ) : (
-            <XCircleIcon className="w-5" fill="none" stroke="#d4d4d8" />
+            <XCircleIcon className="w-5" fill="none" stroke={theme === "dark" ? "#d4d4d8" : "#1a120b"} />
           )}
         </div>
       </div>
