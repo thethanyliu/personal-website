@@ -13,7 +13,7 @@ function IntroSection() {
             Hello there, I'm
           </span>
           <span className="text-5xl lg:text-6xl text-left font-bold pb-3 w-full z-10">
-            Ethan Liu<span className="dark:text-cloud">.</span>
+            Ethan Liu<span className="text-[#999999] dark:text-cloud">.</span>
           </span>
           <span className="text-left text-lg w-full pb-5">
             For those of you on desktop, yes that is my bitmoji, so please add

@@ -28,7 +28,7 @@ function AboutSection() {
         </h3>
         <h1 className="text-5xl font-semibold ">
           Full time student, part time
-          <span className="dark:text-sand"> nostalgic.</span>
+          <span className="text-[#f8f8fa] dark:text-sand"> nostalgic.</span>
         </h1>
         <a
           className="flex transition ease-in-out delay-150 hover:translate-x-[8px] pt-5 pb-1 text-left uppercase tracking-wider border-b-2 dark:border-white border-stone-800 cursor-pointer"

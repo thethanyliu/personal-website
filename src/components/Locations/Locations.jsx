@@ -7,7 +7,7 @@ function Locations() {
   const { ref, inView } = useInView({ triggerOnce: true });
   const [toggle, setToggle] = useState(false);
 
-  const toggleStyles = "m-auto h-[20px] w-[50px] rounded-[50px] cursor-pointer"
+  const toggleStyles = "m-auto h-[20px] w-[50px] rounded-[50px] cursor-pointer";
 
   function handleToggle() {
     setToggle(!toggle);
@@ -18,14 +18,20 @@ function Locations() {
       name="places"
       className="flex flex-col py-8 px-5 md:px-24 lg:px-56 xl:px-80"
     >
-      <div ref={ref} className={`animatefr ${inView? " appearfr" : ""}`}>
+      <div ref={ref} className={`animatefr ${inView ? " appearfr" : ""}`}>
         <>
           <h1 className="text-4xl font-semibold text-center py-10">
             Where I've Lived
           </h1>
 
           <div
-            className= {toggle ? "second bg-gradient-to-t from-[#afafaf] to-[#f8f8fa] dark:bg-gradient-to-t dark:from-[#194a50] dark:to-[#d8a28c] " + toggleStyles : "relative bg-gradient-to-t from-[#afafaf] to-[#c0c2ce] dark:bg-gradient-to-t dark:from-[#be375f] dark:to-[#d8a28c] " + toggleStyles}
+            className={
+              toggle
+                ? "second bg-gradient-to-t from-[#5a5757] to-[#f8f8fa] dark:bg-gradient-to-t dark:from-[#194a50] dark:to-[#d8a28c] " +
+                  toggleStyles
+                : "relative bg-gradient-to-t from-[#6f7c85] to-[#c0c2ce] dark:bg-gradient-to-t dark:from-[#be375f] dark:to-[#d8a28c] " +
+                  toggleStyles
+            }
             onClick={handleToggle}
           >
             <div className="notch"></div>
