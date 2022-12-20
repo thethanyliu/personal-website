@@ -10,10 +10,10 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="bg-storm flex flex-col items-center pb-20 px-5 md:px-24 lg:px-56 xl:px-80"
+      className="flex flex-col items-center pb-20 px-5 md:px-24 lg:px-56 xl:px-80"
     >
       <div ref={refOne} className={`animatefu ${oneInView? " appearfu" : ""}`}>
-        <h2 className="text-cloud font-semibold uppercase text-center underline underline-offset-2 pb-3">
+        <h2 className="dark:text-cloud font-semibold uppercase text-center underline underline-offset-2 pb-3">
           Contact
         </h2>
         <h1 className="font-bold text-center text-4xl pb-5">
@@ -28,7 +28,7 @@ const Contact = () => {
       </div>
       <div ref={refTwo} className={`animatefr ${twoInView? " appearfr" : ""}`}>
         <a
-          className="flex transition ease-in-out delay-150 hover:translate-x-[8px] w-max relative text-center uppercase border-b-2 border-zinc-300 pb-1 tracking-wider"
+          className="flex transition ease-in-out delay-150 hover:translate-x-[8px] w-max relative text-center uppercase border-b-2 dark:border-zinc-300 border-stone-800 pb-1 tracking-wider"
           href="mailto:ethanliu549@gmail.com"
           target="_blank"
           onClick={() => gaEventTracker("Email")}

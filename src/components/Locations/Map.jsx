@@ -159,7 +159,7 @@ function Map() {
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
             geographies.map((geo) => (
-              <Geography key={geo.rsmKey} geography={geo} fill="#d37559" />
+              <Geography className="fill-[#afafaf] dark:fill-[#d37559]" key={geo.rsmKey} geography={geo} />
             ))
           }
         </Geographies>

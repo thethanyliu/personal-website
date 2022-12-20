@@ -1,19 +1,25 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Bars3Icon, MoonIcon, SunIcon, XCircleIcon } from "@heroicons/react/24/outline";
-import logo from "../assets/img/logo.png";
+import {
+  Bars3Icon,
+  MoonIcon,
+  SunIcon,
+  XCircleIcon,
+} from "@heroicons/react/24/outline";
+import logolight from "../assets/img/logo-light.png";
+import logodark from "../assets/img/logo-black.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
-  const [theme, setTheme] = useState("dark")
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     if (theme === "dark") {
-      document.documentElement.classList.add("dark")
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark")
+      document.documentElement.classList.remove("dark");
     }
-  }, [theme])
+  }, [theme]);
 
   function navHandler() {
     setNav(!nav);
@@ -25,9 +31,9 @@ function Navbar() {
 
   function handleThemeButton() {
     if (theme === "dark") {
-      setTheme("light")
+      setTheme("light");
     } else {
-      setTheme("dark")
+      setTheme("dark");
     }
   }
 
@@ -42,11 +48,16 @@ function Navbar() {
   // window.addEventListener("scroll", scrollHandler);
 
   return (
-    <div className="bg-storm w-screen h-16 z-20 fixed drop-shadow-lg">
+    <div className="dark:bg-storm bg-[#d2d4dc] w-screen h-16 z-20 fixed drop-shadow-lg ">
       <div className="px-3 justify-between items-center w-full h-full flex">
         <div className="flex items-center">
-          <img src={logo} alt="personal logo" width="65px" height="65px" />
-          <ul className="text-slate-100 hidden md:flex">
+          <img
+            src={theme === "dark" ? logolight : logodark}
+            alt="personal logo"
+            width="65px"
+            height="65px"
+          />
+          <ul className="hidden md:flex">
             <li className="cursor-pointer">
               <Link to="intro" smooth={true} duration={500}>
                 Home
@@ -69,11 +80,25 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div onClick={handleThemeButton} className={theme === "dark" ? "hidden md:flex bg-orange-300 p-2 mr-4 rounded-md" : "hidden"}>
+        <div
+          onClick={handleThemeButton}
+          className={
+            theme === "dark"
+              ? "hidden md:flex bg-orange-300 p-2 mr-4 rounded-md"
+              : "hidden"
+          }
+        >
           <SunIcon className="w-5" fill="none" stroke="#fff" />
         </div>
-        <div onClick={handleThemeButton} className={theme === "light" ? "hidden md:flex bg-violet-300 p-2 mr-4 rounded-md" : "hidden"}>
-          <MoonIcon className="w-5" fill="none"/>
+        <div
+          onClick={handleThemeButton}
+          className={
+            theme === "light"
+              ? "hidden md:flex bg-violet-300 p-2 mr-4 rounded-md"
+              : "hidden"
+          }
+        >
+          <MoonIcon className="w-5" fill="none" />
         </div>
         <div className="md:hidden mr-3" onClick={navHandler}>
           {!nav ? (
@@ -85,25 +110,27 @@ function Navbar() {
       </div>
       <ul
         className={
-          !nav ? "hidden" : "absolue bg-storm w-full px-6 text-slate-50"
+          !nav
+            ? "hidden"
+            : "bg-[#d2d4dc] dark:bg-storm absolue w-full px-6 md:hidden"
         }
       >
-        <li className="border-b-2 border-zinc-300 cursor-pointer">
+        <li className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer">
           <Link onClick={closeHandler} to="intro" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="border-b-2 border-zinc-300 cursor-pointer">
+        <li className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer">
           <Link onClick={closeHandler} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="border-b-2 border-zinc-300 cursor-pointer">
+        <li className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer">
           <Link onClick={closeHandler} to="tech" smooth={true} duration={500}>
             Tech
           </Link>
         </li>
-        <li className="border-b-2 border-zinc-300 cursor-pointer">
+        <li className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer">
           <Link
             onClick={closeHandler}
             to="contact"
@@ -113,6 +140,28 @@ function Navbar() {
             Contact
           </Link>
         </li>
+        {/* <li>
+          <div
+            onClick={handleThemeButton}
+            className={
+              theme === "dark"
+                ? "justify-center items-center bg-orange-300 p-2 mr-4 rounded-md"
+                : "hidden"
+            }
+          >
+            <SunIcon className="w-5" fill="none" stroke="#fff" />
+          </div>
+          <div
+            onClick={handleThemeButton}
+            className={
+              theme === "light"
+                ? "bg-violet-300 p-2 mr-4 rounded-md"
+                : "hidden"
+            }
+          >
+            <MoonIcon className="w-5" fill="none" />
+          </div>
+        </li> */}
       </ul>
     </div>
   );

@@ -13,18 +13,16 @@
 } */
 
 /* Toggle switch */
-.toggle {
-  height: 20px;
-  width: 50px;
-  border-radius: 50px;
+.toggledark {
   background-image: linear-gradient(#be375f, #d8a28c);
-  position: relative;
-  cursor: pointer;
-  margin: auto;
 }
 
-.toggle.second {
-  background-image: linear-gradient(#194a50, #d8a28c);
+.togglelight {
+  background-image: linear-gradient(#000, #000);
+}
+
+.second {
+  position: relative;
 }
 
 .notch {

@@ -12,13 +12,13 @@ function IntroSection() {
             Hello there, I'm
           </span>
           <span className="text-5xl lg:text-6xl text-left font-bold pb-3 w-full z-10">
-            Ethan Liu<span className="text-cloud">.</span>
+            Ethan Liu<span className="dark:text-cloud">.</span>
           </span>
           <span className="text-left text-lg w-full pb-5">
             For those of you on desktop, yes that is my bitmoji, so please add
             me on snap at ethanliu666.
           </span>
-          <span className="absolute top-[-30px] lg:top-[-50px] text-[4rem] lg:text-[6rem] font-bold z-2 text-[#113245] tracking-wide">
+          <span className="absolute top-[-30px] lg:top-[-50px] text-[4rem] lg:text-[6rem] font-bold z-2 dark:text-[#113245] text-[#afb0b4] tracking-wide">
             <Typical
               steps={["Software", 1500, "Devploper", 2000]}
               loop={Infinity}
@@ -36,7 +36,7 @@ function IntroSection() {
           </button>
         </div>
         <div className="hidden md:flex pr-5 justify-center items-center">
-          <img src={Bgif} alt="hello gif" />
+          <img className="rounded-md" src={Bgif} alt="hello gif" />
         </div>
       </div>
   );

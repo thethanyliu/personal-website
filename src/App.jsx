@@ -27,7 +27,7 @@ function App() {
       {loading ? (
         <LoadingScreen />
       ) : (
-        <div className="dark:bg-storm dark:text-slate-100 bg-[#f0e5df] text-stone-900">
+        <div className="dark:bg-storm dark:text-slate-100 bg-[#d2d4dc] text-stone-900">
           <Navbar />
           <IntroSection />
           <AboutSection />
