@@ -21,6 +21,9 @@ module.exports = {
         "beige": "#e9dac1",
         "pastel": "#f7ecde"
       },
+      fontFamily: {
+        burtons: "burtons"
+      }
     },
   },
   plugins: [],

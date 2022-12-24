@@ -57,7 +57,7 @@ function Navbar() {
             width="65px"
             height="65px"
           />
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex font-burtons">
             <li className="cursor-pointer">
               <Link to="intro" smooth={true} duration={500}>
                 Home
