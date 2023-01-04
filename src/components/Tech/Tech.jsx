@@ -20,38 +20,38 @@ function Tech() {
     },
     {
       id: "t2",
-      title: "Flask",
-      image: flask,
-    },
-    {
-      id: "t3",
       title: "Github",
       image: github,
     },
     {
-      id: "t4",
+      id: "t3",
       title: "Git",
       image: git,
     },
     {
-      id: "t5",
+      id: "t4",
       title: "MySQL",
       image: sql,
     },
     {
-      id: "t6",
+      id: "t5",
       title: "Tailwind CSS",
       image: tailwind,
     },
     {
-      id:"t7",
+      id:"t6",
       title: "Bash",
       image: bash,
     },
     {
-      id:"t8",
+      id:"t7",
       title: "Docker",
       image: docker,
+    },
+    {
+      id: "t8",
+      title: "Flask",
+      image: flask,
     },
   ];
 
