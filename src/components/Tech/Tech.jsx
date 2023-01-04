@@ -6,6 +6,8 @@ import git from "../../assets/logos/git.png";
 import github from "../../assets/logos/github.png";
 import sql from "../../assets/logos/mysql.png";
 import tailwind from "../../assets/logos/tailwindcss.png";
+import bash from "../../assets/logos/bash.png";
+import docker from "../../assets/logos/docker.png";
 
 function Tech() {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -41,6 +43,16 @@ function Tech() {
       title: "Tailwind CSS",
       image: tailwind,
     },
+    {
+      id:"t7",
+      title: "Bash",
+      image: bash,
+    },
+    {
+      id:"t8",
+      title: "Docker",
+      image: docker,
+    },
   ];
 
   return (
@@ -54,13 +66,10 @@ function Tech() {
             What I Work With
           </h1>
         </>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-5">
-          <TechItem title={tech[0].title} image={tech[0].image} />
-          <TechItem title={tech[1].title} image={tech[1].image} />
-          <TechItem title={tech[2].title} image={tech[2].image} />
-          <TechItem title={tech[3].title} image={tech[3].image} />
-          <TechItem title={tech[4].title} image={tech[4].image} />
-          <TechItem title={tech[5].title} image={tech[5].image} />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
+          {tech.map((element) => {
+            return <TechItem title={element.title} image={element.image} />
+          })}
         </div>
       </div>
     </div>

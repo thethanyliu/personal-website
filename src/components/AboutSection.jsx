@@ -60,10 +60,10 @@ function AboutSection() {
         }`}
       >
         <p className="text-lg">
-          Hi there, I'm Ethan, I still enjoy Fallout 4 even after 7 years. Other
-          than that, I like balling, Peaky Blinders and I have a major sweet
-          tooth. I currently am a first year CS student at the University of
-          Waterloo. Feel free to hang around as long as you like.
+          Hi there, I'm Ethan, I am a first year CS student at the University of
+          Waterloo currently working on web dev. In my free time I enjoy
+          watching You (the Netflix show, I'm not a pychopath) and playing
+          basketball. Feel free to hang around as long as you like.
         </p>
       </div>
     </div>
