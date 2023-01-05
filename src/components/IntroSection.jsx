@@ -17,7 +17,7 @@ function IntroSection() {
           </span>
           <span className="text-left text-lg w-full pb-5">
             For those of you on desktop, in case you're wondering, yes that is my bitmoji, you can add
-            me on snap at ethanliu666.
+            me on snap at ethanliu55.
           </span>
           <span className="absolute top-[-30px] lg:top-[-50px] text-[4rem] lg:text-[6rem] font-bold z-2 dark:text-[#113245] text-[#afb0b4] tracking-wide">
             <Typical
