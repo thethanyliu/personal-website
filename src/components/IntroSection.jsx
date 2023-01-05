@@ -16,7 +16,7 @@ function IntroSection() {
             Ethan Liu<span className="text-[#999999] dark:text-cloud">.</span>
           </span>
           <span className="text-left text-lg w-full pb-5">
-            For those of you on desktop, yes that is my bitmoji, so please add
+            For those of you on desktop, in case you're wondering, yes that is my bitmoji, you can add
             me on snap at ethanliu666.
           </span>
           <span className="absolute top-[-30px] lg:top-[-50px] text-[4rem] lg:text-[6rem] font-bold z-2 dark:text-[#113245] text-[#afb0b4] tracking-wide">
