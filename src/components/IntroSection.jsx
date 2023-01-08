@@ -7,7 +7,7 @@ function IntroSection() {
   const gaEventTracker = useAnalyticsEventTracker("Rick Roll Counter");
   
   return (
-      <div name="intro" className="grid md:grid-cols-2 justify-between w-full h-screen px-0 lg:px-24 xl:px-64">
+      <div name="intro" className="grid md:grid-cols-2 justify-between w-full h-screen px-0 md:px-4 lg:px-24 xl:px-64">
         <div className="flex flex-col relative justify-center items-start pl-4 md:pl-0 m-auto">
           <span className="z-10 text-md text-left font-bold w-full">
             Hello there, I'm
