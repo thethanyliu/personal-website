@@ -16,7 +16,7 @@ function Locations() {
   return (
     <div
       name="places"
-      className="flex flex-col py-8 px-5 md:px-24 lg:px-56 xl:px-80"
+      className="flex flex-col py-8 px-5 md:px-24 lg:px-56 xl:px-64"
     >
       <div ref={ref} className={`animatefr ${inView ? " appearfr" : ""}`}>
         <>
