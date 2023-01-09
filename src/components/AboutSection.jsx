@@ -15,7 +15,7 @@ function AboutSection() {
   return (
     <div
       name="about"
-      className="dark:bg-teal bg-[#c0c2ce] grid md:grid-cols-2 justify-center items-center px-5 md:px-16 lg:px-56 xl:px-80"
+      className="dark:bg-teal bg-[#c0c2ce] grid md:grid-cols-2 justify-center items-center px-5 md:px-16 lg:px-56 xl:px-64"
     >
       <div
         ref={refOne}

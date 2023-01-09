@@ -4,7 +4,7 @@ import Githubblue from "../assets/logos/githubblue.png";
 function Footer() {
 
   return (
-    <div className="flex flex-col w-full z-10 justify-center items-center px-5 md:px-24 lg:px-56 xl:px-80">
+    <div className="flex flex-col w-full z-10 justify-center items-center px-5 md:px-24 lg:px-56 xl:px-64">
         <div className="pb-3">
           <h1 className="text-center dark:text-[#a9a9a9] text-2xl font-mono">Follow Me</h1>
         </div>
