@@ -62,7 +62,7 @@ function Tech() {
     >
       <div ref={ref} className={`animatefd${inView? " appearfd" : ""}`}>
         <>
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-3xl font-semibold drop-shadow-md">
             What I Work With
           </h1>
         </>
