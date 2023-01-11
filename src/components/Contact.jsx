@@ -19,7 +19,7 @@ const Contact = () => {
         <h1 className="font-bold text-center text-4xl pb-5">
           I may be an ISTJ, but...
         </h1>
-        <p className="text-lg text-center mx-8 md:mx-20 xl:mx-24 pb-8">
+        <p className="text-lg text-center mx-8 md:mx-20 lg:mx-24 xl:px-64 pb-8">
           That doesn't mean I don't like meeting new people or discussing new
           ideas, so please, feel free to hit me up about any tech related
           projects and/or ideas that you find are worth sharing.
