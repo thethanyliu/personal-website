@@ -37,16 +37,6 @@ function Navbar() {
     }
   }
 
-  // function scrollHandler() {
-  //   if(window.scrollY>=100){
-  //     setScrolling(true);
-  //   }else{
-  //     setScrolling(false);
-  //   }
-  // }
-
-  // window.addEventListener("scroll", scrollHandler);
-
   return (
     <div className="dark:bg-storm bg-[#d2d4dc] w-screen h-16 z-20 fixed drop-shadow-lg ">
       <div className="px-3 justify-between items-center w-full h-full flex">

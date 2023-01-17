@@ -1,11 +1,9 @@
-import useAnalyticsEventTracker from "./analyticsEventTracker";
+import { Link } from "react-scroll";
 import Typical from "react-typical";
 import Bgifdark from "../assets/img/bgif-dark.gif";
 import Bgiflight from "../assets/img/bgif-light.gif"
 
-function IntroSection() {
-  const gaEventTracker = useAnalyticsEventTracker("Find out more counter");
-  
+function IntroSection() {  
   return (
       <div name="intro" className="grid md:grid-cols-2 justify-between w-full h-screen px-0 md:px-4 lg:px-24 xl:px-56">
         <div className="flex flex-col relative justify-center items-start pl-4 md:pl-0 m-auto">
@@ -16,8 +14,7 @@ function IntroSection() {
             Ethan Liu<span className="text-[#999999] dark:text-cloud">.</span>
           </span>
           <span className="text-left text-lg w-full pb-5">
-            For those of you on desktop, in case you're wondering, yes that is my bitmoji, you can add
-            me on snap at ethanliu55.
+            An aspiring software developer who can maybe be the CSS for your HTML.
           </span>
           <span className="absolute top-[-30px] lg:top-[-50px] text-[4rem] lg:text-[6rem] font-bold z-2 dark:text-[#113245] text-[#afb0b4] tracking-wide">
             <Typical
@@ -26,14 +23,10 @@ function IntroSection() {
               wrapper="b"
             />
           </span>
-          <button className="transition ease-in-out delay-150 hover:translate-x-[8px] text-left uppercase tracking-wider underline underline-offset-8 py-3">
-            <a
-              href="https://www.youtube.com/watch?v=O91DT1pR1ew"
-              target="_blank"
-              onClick={() => gaEventTracker("Find out more")}
-            >
-              Find out more
-            </a>
+          <button className="transition ease-in-out delay-150 hover:translate-x-[8px] text-left uppercase tracking-wider underline underline-offset-8">
+            <Link to="about" smooth={true} duration={500} offset={-100}>
+                Scroll for more
+              </Link>
           </button>
         </div>
         <div className="hidden md:flex pr-5 justify-center items-center">
