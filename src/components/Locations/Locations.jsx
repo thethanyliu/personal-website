@@ -21,7 +21,7 @@ function Locations() {
       <div ref={ref} className={`animatefr ${inView ? " appearfr" : ""}`}>
         <>
           <h1 className="text-4xl font-semibold text-center py-10">
-            Where I've Lived
+            Where to Next
           </h1>
 
           <div
