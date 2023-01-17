@@ -5,8 +5,8 @@ import Bgiflight from "../assets/img/bgif-light.gif"
 
 function IntroSection() {  
   return (
-      <div name="intro" className="grid md:grid-cols-2 justify-between w-full h-screen px-0 md:px-4 lg:px-24 xl:px-56">
-        <div className="flex flex-col relative justify-center items-start pl-4 md:pl-0 m-auto">
+      <div name="intro" className="grid md:grid-cols-2 justify-between w-full h-screen pl-4 md:px-4 lg:px-32 xl:px-56">
+        <div className="flex flex-col relative justify-center items-start m-auto">
           <span className="z-10 text-md text-left font-bold w-full">
             Hello there, I'm
           </span>
@@ -24,7 +24,7 @@ function IntroSection() {
             />
           </span>
           <button className="transition ease-in-out delay-150 hover:translate-x-[8px] text-left uppercase tracking-wider underline underline-offset-8">
-            <Link to="about" smooth={true} duration={500} offset={-100}>
+            <Link to="about" smooth={true} duration={500} offset={-75}>
                 Scroll for more
               </Link>
           </button>
