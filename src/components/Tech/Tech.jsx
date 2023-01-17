@@ -58,7 +58,7 @@ function Tech() {
   return (
     <div
       name="tech"
-      className="flex flex-col pb-24 px-5 md:px-24 lg:px-48 xl:px-60"
+      className="flex flex-col pb-24 px-5 md:px-24 lg:px-42 xl:px-60"
     >
       <div ref={ref} className={`animatefd${inView? " appearfd" : ""}`}>
         <>

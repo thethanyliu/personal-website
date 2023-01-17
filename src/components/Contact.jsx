@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="flex flex-col items-center pb-20 px-5 md:px-20 lg:px-56"
+      className="flex flex-col items-center pb-20 px-5 md:px-20 lg:px-52"
     >
       <div ref={refOne} className={`animatefu ${oneInView? " appearfu" : ""}`}>
         <h2 className="dark:text-cloud font-semibold uppercase text-center underline underline-offset-2 pb-3">
