@@ -23,11 +23,10 @@ function Locations() {
           <h1 className="text-4xl font-semibold text-center py-10">
             Where to Next
           </h1>
-
           <div
             className={
               toggle
-                ? "second bg-gradient-to-t from-[#5a5757] to-[#f8f8fa] dark:bg-gradient-to-t dark:from-[#194a50] dark:to-[#d8a28c] " +
+                ? "second bg-gradient-to-t from-[#ac9d9d] to-[#f8f8fa] dark:bg-gradient-to-t dark:from-[#194a50] dark:to-[#d8a28c] " +
                   toggleStyles
                 : "relative bg-gradient-to-t from-[#6f7c85] to-[#c0c2ce] dark:bg-gradient-to-t dark:from-[#be375f] dark:to-[#d8a28c] " +
                   toggleStyles
