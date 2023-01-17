@@ -16,7 +16,7 @@ function Locations() {
   return (
     <div
       name="places"
-      className="flex flex-col py-8 px-5 md:px-24 lg:px-56 xl:px-64"
+      className="flex flex-col py-8 px-5 md:px-20 lg:px-48 xl:px-60"
     >
       <div ref={ref} className={`animatefr ${inView ? " appearfr" : ""}`}>
         <>
@@ -44,7 +44,7 @@ function Locations() {
         <div className={!toggle ? "" : "hidden"}>
           <Map />
         </div>
-        <div className={toggle ? "" : "hidden"}>
+        <div className={toggle ? "pb-10" : "hidden"}>
           <Timeline />
         </div>
       </div>

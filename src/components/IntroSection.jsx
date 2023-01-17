@@ -4,7 +4,7 @@ import Bgifdark from "../assets/img/bgif-dark.gif";
 import Bgiflight from "../assets/img/bgif-light.gif"
 
 function IntroSection() {
-  const gaEventTracker = useAnalyticsEventTracker("Rick Roll Counter");
+  const gaEventTracker = useAnalyticsEventTracker("Find out more counter");
   
   return (
       <div name="intro" className="grid md:grid-cols-2 justify-between w-full h-screen px-0 md:px-4 lg:px-24 xl:px-56">
