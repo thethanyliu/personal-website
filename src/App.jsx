@@ -33,6 +33,7 @@ function App() {
           <IntroSection />
           <AboutSection />
           <Locations />
+          <Projects />
           <Tech />
           <Contact />
           <Footer />
