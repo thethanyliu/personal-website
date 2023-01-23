@@ -1,5 +1,4 @@
 import newsapp from "../assets/img/news-comp-app.png";
-import github from "../assets/logos/githubblue.png";
 
 const Projects = () => {
   return (
