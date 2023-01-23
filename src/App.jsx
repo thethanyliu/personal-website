@@ -33,7 +33,7 @@ function App() {
           <IntroSection />
           <AboutSection />
           <Locations />
-          <Projects />
+          {/* <Projects /> */}
           <Tech />
           <Contact />
           <Footer />
