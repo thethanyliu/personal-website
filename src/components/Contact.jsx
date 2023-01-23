@@ -17,12 +17,12 @@ const Contact = () => {
           Contact
         </h2>
         <h1 className="font-bold text-center text-4xl pb-5">
-          I may be an ISTJ, but...
+          I'm an ESTP, so...
         </h1>
         <p className="text-lg text-center mx-8 md:mx-20 lg:mx-24 xl:px-64 pb-8">
-          That doesn't mean I don't like meeting new people or discussing new
-          ideas, so please, feel free to hit me up about any tech related
-          projects and/or ideas that you find are worth sharing.
+          That means I enjoy hearing new ideas whether they be tech related or otherwise.
+          So, if you have anything you feel is worth sharing, feel free to shoot me an email
+          at ethanliu549@gmail.com.
         </p>
       </div>
       <div ref={refTwo} className={`animatefr ${twoInView? " appearfr" : ""}`}>
