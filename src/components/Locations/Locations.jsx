@@ -4,7 +4,9 @@ import Map from "./Map";
 import Timeline from "./Timeline";
 
 function Locations() {
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const { ref: refTitle, inView: titleInView } = useInView({ triggerOnce: true });
+  const { ref: refToggle, inView: toggleInView } = useInView({ triggerOnce: true });
+  const { ref: refMap, inView: mapInView } = useInView({ triggerOnce: true });
   const [toggle, setToggle] = useState(false);
 
   const toggleStyles = "m-auto h-[20px] w-[50px] rounded-[50px] cursor-pointer";
@@ -18,11 +20,16 @@ function Locations() {
       name="places"
       className="flex flex-col pt-8 px-5 md:px-20 lg:px-42 xl:px-56"
     >
-      <div ref={ref} className={`animatefr ${inView ? " appearfr" : ""}`}>
-        <>
-          <h1 className="text-4xl font-semibold text-center py-10">
-            Where to Next
-          </h1>
+      <>
+        <h1
+          ref={refTitle}
+          className={`animatefr text-4xl font-semibold text-center py-10 ${
+            titleInView ? " appearfr" : ""
+          }`}
+        >
+          Where to Next
+        </h1>
+        <div ref={refToggle} className={`animatefu ${toggleInView ? " appearfu" : ""}`}>
           <div
             className={
               toggle
@@ -38,14 +45,14 @@ function Locations() {
           <div className="text-center text-2xl pt-3">
             {!toggle ? "See Timeline" : "See Map"}
           </div>
-        </>
+        </div>
+      </>
 
-        <div className={!toggle ? "" : "hidden"}>
-          <Map />
-        </div>
-        <div className={toggle ? "pb-10" : "hidden"}>
-          <Timeline />
-        </div>
+      <div ref={refMap} className={!toggle ? `animatefr ${mapInView ? " appearfr" : ""}` : "hidden"}>
+        <Map />
+      </div>
+      <div className={toggle ? "pb-10" : "hidden"}>
+        <Timeline />
       </div>
     </div>
   );
