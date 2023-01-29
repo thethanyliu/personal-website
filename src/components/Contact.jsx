@@ -17,7 +17,7 @@ const Contact = () => {
           Contact
         </h2>
         <h1 className="font-bold text-center text-4xl pb-5">
-          I'm an ESTP, so...
+          I'm an ESTJ, so...
         </h1>
         <p className="text-lg text-center mx-8 md:mx-20 lg:mx-24 xl:px-64 pb-8">
           That means I enjoy hearing new ideas/projects whether they be tech

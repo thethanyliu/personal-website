@@ -1,4 +1,4 @@
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 import TechItem from "./TechItem";
 import rea from "../../assets/logos/react.png";
 import flask from "../../assets/logos/flask.png";
@@ -10,7 +10,10 @@ import bash from "../../assets/logos/bash.png";
 import docker from "../../assets/logos/docker.png";
 
 function Tech() {
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const { ref: refTitle, inView: titleInView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: refItem, inView: itemInView } = useInView({ triggerOnce: true });
 
   const tech = [
     {
@@ -39,12 +42,12 @@ function Tech() {
       image: tailwind,
     },
     {
-      id:"t6",
+      id: "t6",
       title: "Bash",
       image: bash,
     },
     {
-      id:"t7",
+      id: "t7",
       title: "Docker",
       image: docker,
     },
@@ -60,17 +63,18 @@ function Tech() {
       name="tech"
       className="flex flex-col pb-24 pt-10 px-5 md:px-24 lg:px-52 xl:px-60"
     >
-      <div ref={ref} className={`animatefd${inView? " appearfd" : ""}`}>
-        <>
-          <h1 className="text-3xl font-semibold drop-shadow-md">
-            What I Work With
-          </h1>
-        </>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
-          {tech.map((element) => {
-            return <TechItem title={element.title} image={element.image} />
-          })}
-        </div>
+      <div
+        ref={refTitle}
+        className={`animatefd${titleInView ? " appearfd" : ""}`}
+      >
+        <h1 className="text-3xl font-semibold drop-shadow-md">
+          What I Work With
+        </h1>
+      </div>
+      <div className={`animatefr grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5${titleInView ? " appearfr" : ""}`}>
+        {tech.map((element) => {
+          return <TechItem title={element.title} image={element.image} />;
+        })}
       </div>
     </div>
   );
