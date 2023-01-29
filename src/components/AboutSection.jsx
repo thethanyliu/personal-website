@@ -29,7 +29,7 @@ function AboutSection() {
         <h1 className="text-5xl font-semibold ">
           Glad you're
           here, take a second to 
-          <span className="text-[#f5f5fa] dark:text-sand"> look around.</span>
+          <span className="dark:text-sand"> look around.</span>
         </h1>
         <a
           className="flex transition ease-in-out delay-150 hover:translate-x-[8px] pt-5 pb-1 text-left uppercase tracking-wider border-b-2 dark:border-white border-stone-800 cursor-pointer"
