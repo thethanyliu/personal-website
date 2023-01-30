@@ -71,7 +71,7 @@ function Tech() {
           What I Work With
         </h1>
       </div>
-      <div className={`animatefr grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5${titleInView ? " appearfr" : ""}`}>
+      <div className={`animatefu grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5${titleInView ? " appearfu" : ""}`}>
         {tech.map((element) => {
           return <TechItem title={element.title} image={element.image} />;
         })}
