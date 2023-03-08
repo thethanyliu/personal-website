@@ -5,23 +5,13 @@ import Instadark from "../assets/logos/insta-logo-dark.png";
 
 function AboutSection() {
   const gaEventTracker = useAnalyticsEventTracker("Instagram");
-  const { ref: refOne, inView: oneIsVisible } = useInView({
-    triggerOnce: true,
-  });
-  const { ref: refTwo, inView: twoIsVisible } = useInView({
-    triggerOnce: true,
-  });
-
   return (
     <div
       name="about"
       className="dark:bg-teal bg-[#c0c2ce] grid md:grid-cols-2 justify-center items-center px-5 md:px-16 lg:px-52 xl:px-72"
     >
       <div
-        ref={refOne}
-        className={`flex flex-col items-start mt-12 mx-5 md:my-[3.5rem] animatefu${
-          oneIsVisible ? " appearfu" : ""
-        }`}
+        className="flex flex-col items-start mt-12 mx-5 md:my-[3.5rem]"
       >
         <h3 className="text-left font-semibold uppercase text-md pb-3 underline underline-offset-2 dark:text-cloud text-[#4c4c55]">
           About Me
@@ -55,10 +45,7 @@ function AboutSection() {
         </a>
       </div>
       <div
-        ref={refTwo}
-        className={`flex my-10 mx-5 animatefl${
-          twoIsVisible ? " appearfl" : ""
-        }`}
+        className="flex my-10 mx-5"
       >
         <p className="text-lg">
           Hi there, I'm Ethan, I am a first year CS student at the University of
