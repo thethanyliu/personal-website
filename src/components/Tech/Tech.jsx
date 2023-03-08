@@ -10,9 +10,6 @@ import bash from "../../assets/logos/bash.png";
 import docker from "../../assets/logos/docker.png";
 
 function Tech() {
-  const { ref: refTitle, inView: titleInView } = useInView({
-    triggerOnce: true,
-  });
   const { ref: refItem, inView: itemInView } = useInView({ triggerOnce: true });
 
   const tech = [
@@ -63,15 +60,17 @@ function Tech() {
       name="tech"
       className="flex flex-col pb-24 pt-10 px-5 md:px-24 lg:px-52 xl:px-60"
     >
-      <div
-        ref={refTitle}
-        className={`animatefd${titleInView ? " appearfd" : ""}`}
-      >
+      <div>
         <h1 className="text-3xl font-semibold drop-shadow-md">
           What I Work With
         </h1>
       </div>
-      <div className={`animatefu grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5${titleInView ? " appearfu" : ""}`}>
+      <div
+      ref={refItem}
+        className={`animatefu grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5${
+          itemInView ? " appearfu" : ""
+        }`}
+      >
         {tech.map((element) => {
           return <TechItem title={element.title} image={element.image} />;
         })}
