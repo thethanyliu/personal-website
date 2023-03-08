@@ -50,7 +50,7 @@ function AboutSection() {
         <p className="text-lg">
           Hi there, I'm Ethan, I am a first year CS student at the University of
           Waterloo currently working on web dev. In my free time I enjoy
-          watching You (the Netflix show, I'm not a pychopath) and playing
+          watching The Man in the High Castle and playing
           basketball. Feel free to hang around as long as you like.
         </p>
       </div>
