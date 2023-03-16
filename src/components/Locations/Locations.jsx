@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { useInView } from "react-intersection-observer";
 import Map from "./Map";
 import Timeline from "./Timeline";
+// import { useInView } from "react-intersection-observer";
 
 function Locations() {
   // const { ref: refMap, inView: mapInView } = useInView({ triggerOnce: true });

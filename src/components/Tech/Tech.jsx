@@ -1,4 +1,3 @@
-import { useInView } from "react-intersection-observer";
 import TechItem from "./TechItem";
 import rea from "../../assets/logos/react.png";
 import flask from "../../assets/logos/flask.png";
@@ -10,7 +9,6 @@ import bash from "../../assets/logos/bash.png";
 import docker from "../../assets/logos/docker.png";
 
 function Tech() {
-  // const { ref: refItem, inView: itemInView } = useInView({ triggerOnce: true });
 
   const tech = [
     {

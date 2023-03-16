@@ -1,11 +1,8 @@
-import { useInView } from "react-intersection-observer";
 import useAnalyticsEventTracker from "./analyticsEventTracker";
 import email from "../assets/img/gmail.png";
 
 const Contact = () => {
   const gaEventTracker = useAnalyticsEventTracker("Contact");
-  // const { ref: refOne, inView: oneInView } = useInView({ triggerOnce: true });
-  // const { ref: refTwo, inView: twoInView } = useInView({ triggerOnce: true });
 
   return (
     <div
