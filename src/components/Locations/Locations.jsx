@@ -4,7 +4,7 @@ import Map from "./Map";
 import Timeline from "./Timeline";
 
 function Locations() {
-  const { ref: refMap, inView: mapInView } = useInView({ triggerOnce: true });
+  // const { ref: refMap, inView: mapInView } = useInView({ triggerOnce: true });
   const [toggle, setToggle] = useState(false);
 
   const toggleStyles = "m-auto h-[20px] w-[50px] rounded-[50px] cursor-pointer";
@@ -40,14 +40,9 @@ function Locations() {
         </div>
       </>
 
-      <div
-        ref={refMap}
-        className={
-          !toggle ? `animatefr ${mapInView ? " appearfr" : ""}` : "hidden"
-        }
-      >
+      <>
         <Map />
-      </div>
+      </>
       <div className={toggle ? "pb-10" : "hidden"}>
         <Timeline />
       </div>

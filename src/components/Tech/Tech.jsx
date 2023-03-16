@@ -10,7 +10,7 @@ import bash from "../../assets/logos/bash.png";
 import docker from "../../assets/logos/docker.png";
 
 function Tech() {
-  const { ref: refItem, inView: itemInView } = useInView({ triggerOnce: true });
+  // const { ref: refItem, inView: itemInView } = useInView({ triggerOnce: true });
 
   const tech = [
     {
@@ -65,12 +65,7 @@ function Tech() {
           What I Work With
         </h1>
       </div>
-      <div
-      ref={refItem}
-        className={`animatefu grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5${
-          itemInView ? " appearfu" : ""
-        }`}
-      >
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
         {tech.map((element) => {
           return <TechItem title={element.title} image={element.image} />;
         })}

@@ -41,7 +41,7 @@ body {
 
 
 /* Fade up */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .animatefu {
     opacity: 0;
     transform: translateY(30px);
@@ -51,10 +51,10 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 /* Fade left */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .animatefl {
     opacity: 0;
     transform: translateX(30px);
@@ -64,10 +64,10 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-}
+} */
 
 /* Fade down */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .animatefd {
     opacity: 0;
     transform: translateY(-20px);
@@ -77,10 +77,10 @@ body {
     opacity: 1;
     transform: translateY(0)
   }
-}
+} */
 
 /* Fade right */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .animatefr {
     opacity: 0;
     transform: translateX(-20px);
@@ -90,4 +90,4 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-}
+} */
