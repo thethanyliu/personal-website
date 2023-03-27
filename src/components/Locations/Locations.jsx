@@ -40,9 +40,9 @@ function Locations() {
         </div>
       </>
 
-      <>
+      <div className={toggle ? "hidden" : ""}>
         <Map />
-      </>
+      </div>
       <div className={toggle ? "pb-10" : "hidden"}>
         <Timeline />
       </div>
