@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 import ReactGA from "react-ga";
-ReactGA.initialize("UA-244956969-1");
+ReactGA.initialize("G-BRR39CPNQ2");
 ReactGA.pageview("/homepage");
 
 function App() {
