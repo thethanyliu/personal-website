@@ -14,7 +14,7 @@ ReactGA.initialize("G-BRR39CPNQ2");
 ReactGA.pageview("/homepage");
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
