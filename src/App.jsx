@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 
 import ReactGA from "react-ga4";
 ReactGA.initialize("G-BRR39CPNQ2");
-ReactGA.pageview("/homepage");
 
 function App() {
   const [loading, setLoading] = useState(true);
