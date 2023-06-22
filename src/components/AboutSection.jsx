@@ -3,7 +3,7 @@ import Instalight from "../assets/logos/gramm.png";
 import Instadark from "../assets/logos/insta-logo-dark.png";
 
 function AboutSection() {
-  const gaEventTracker = useAnalyticsEventTracker("Instagram");
+  const gaEventTracker = useAnalyticsEventTracker("Instagram", "click");
   return (
     <div
       name="about"

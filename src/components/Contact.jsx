@@ -2,7 +2,7 @@ import useAnalyticsEventTracker from "./analyticsEventTracker";
 import email from "../assets/img/gmail.png";
 
 const Contact = () => {
-  const gaEventTracker = useAnalyticsEventTracker("Contact");
+  const gaEventTracker = useAnalyticsEventTracker("Contact", "click");
 
   return (
     <div
