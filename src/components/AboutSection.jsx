@@ -1,9 +1,12 @@
-import useAnalyticsEventTracker from "./analyticsEventTracker";
+import { analyticsEventTracker } from "./analyticsEventTracker";
 import Instalight from "../assets/logos/gramm.png";
 import Instadark from "../assets/logos/insta-logo-dark.png";
 
 function AboutSection() {
-  const gaEventTracker = useAnalyticsEventTracker("Instagram", "click");
+  const instaButtonClick = () => {
+    analyticsEventTracker("Instagram", "Clicked Insta")
+  }
+
   return (
     <div
       name="about"
@@ -21,7 +24,7 @@ function AboutSection() {
           className="flex transition ease-in-out delay-150 hover:translate-x-[8px] pt-5 pb-1 text-left uppercase tracking-wider border-b-2 dark:border-white border-stone-800 cursor-pointer"
           href="https://www.instagram.com/ethanliu8/"
           target="_blank"
-          onClick={() => gaEventTracker("Instagram")}
+          onClick={() => instaButtonClick()}
         >
           Say hello
           <img

@@ -22,8 +22,6 @@ function App() {
     }, 1200);
   }, []);
 
-  ReactGA.pageview(window.location.pathname);
-
   return (
     <>
       {loading ? (
