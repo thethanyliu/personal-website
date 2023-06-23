@@ -5,7 +5,7 @@ import AboutSection from "./components/AboutSection";
 import Navbar from "./components/Navbar";
 import Tech from "./components/Tech/Tech";
 import Locations from "./components/Locations/Locations";
-// import Projects from "./components/Projects";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -32,8 +32,8 @@ function App() {
           <IntroSection />
           <AboutSection />
           <Locations />
-          {/* <Projects /> */}
           <Tech />
+          {/* <Projects /> */}
           <Contact />
           <Footer />
         </div>
