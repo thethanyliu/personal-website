@@ -1,5 +1,6 @@
 import newsApp from "../assets/img/news-comp-app.png";
 import ecomSite from "../assets/img/ecom-site.png";
+import classes from "./Project.module.css";
 
 const Projects = () => {
   return (
@@ -7,17 +8,23 @@ const Projects = () => {
       <h1 className="text-3xl font-semibold text-center drop-shadow-md pb-3">
         Projects
       </h1>
-      <div className="grid md:grid-cols-2 gap-5 pt-5 pb-10">
-        <a href="https://github.com/ethanliu666/news-comp-app" target="_blank" className="flex justify-end">
-          <img
+      <div className="grid md:grid-cols-2 pt-5 pb-10">
+        <>
+          <a
+            className={classes.newsComp}
+            href="https://github.com/ethanliu666/news-comp-app"
+            target="_blank"
+          >
+            {/* <img
             src={newsApp}
             className="rounded-md drop-shadow-md"
             width="400px"
             height="200px"
-          />
-        </a>
+          /> */}
+          </a>
+        </>
 
-        <div className="flex flex-col lg:py-5">
+        <div className="flex flex-col pt-8 lg:py-5 px-2 md:px-0">
           <a
             href="https://github.com/ethanliu666/news-comp-app"
             target="_blank"
@@ -32,7 +39,7 @@ const Projects = () => {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 gap-5 pt-5">
+      <div className="grid md:grid-cols-2 pt-5">
         <div className="hidden md:flex flex-col md:py-5">
           <a
             href="https://ecom-ethanliu666.vercel.app/"
@@ -45,15 +52,12 @@ const Projects = () => {
             An e-commerce store selling my personal custom Lightroom Presets.
           </p>
         </div>
-        <a href="https://ecom-ethanliu666.vercel.app/" target="_blank">
-          <img
-            src={ecomSite}
-            className="rounded-md drop-shadow-md"
-            width="400px"
-            height="200px"
-          />
-        </a>
-        <div className="flex flex-col md:hidden pb-5">
+        <a
+          className={classes.ecomSite}
+          href="https://ecom-ethanliu666.vercel.app/"
+          target="_blank"
+        ></a>
+        <div className="flex flex-col md:hidden pb-5 pt-8 px-2 md:px-0">
           <a
             href="https://ecom-ethanliu666.vercel.app/"
             target="_blank"
