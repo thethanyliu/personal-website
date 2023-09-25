@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import {
   Bars3Icon,
@@ -12,6 +12,20 @@ import logodark from "../assets/img/logo-black.png";
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [theme, setTheme] = useState("dark");
+
+  const navbarRef = useRef();
+
+  const clickHandler = (e) => {
+    if (navbarRef.current && !navbarRef.current.contains(e.target)) {
+      setNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousedown", clickHandler);
+
+    return () => document.removeEventListener("mousedown", clickHandler);
+  });
 
   useEffect(() => {
     if (theme === "dark") {
@@ -38,7 +52,7 @@ function Navbar() {
   }
 
   return (
-    <div className="dark:bg-storm bg-[#d2d4dc] w-screen h-16 z-20 fixed drop-shadow-lg ">
+    <div className="dark:bg-storm bg-[#d2d4dc] w-screen h-16 z-20 fixed drop-shadow-lg">
       <div className="px-3 justify-between items-center w-full h-full flex">
         <div className="flex items-center">
           <img
@@ -92,9 +106,17 @@ function Navbar() {
         </div>
         <div className="md:hidden mr-3" onClick={navHandler}>
           {!nav ? (
-            <Bars3Icon className="w-5" fill="none" stroke={theme === "dark" ? "#d4d4d8" : "#1a120b"} />
+            <Bars3Icon
+              className="w-5"
+              fill="none"
+              stroke={theme === "dark" ? "#d4d4d8" : "#1a120b"}
+            />
           ) : (
-            <XCircleIcon className="w-5" fill="none" stroke={theme === "dark" ? "#d4d4d8" : "#1a120b"} />
+            <XCircleIcon
+              className="w-5"
+              fill="none"
+              stroke={theme === "dark" ? "#d4d4d8" : "#1a120b"}
+            />
           )}
         </div>
       </div>
@@ -102,8 +124,9 @@ function Navbar() {
         className={
           !nav
             ? "hidden"
-            : "bg-[#d2d4dc] dark:bg-storm absolue w-full px-6 md:hidden"
+            : "bg-[#d2d4dc] dark:bg-storm absolute w-full px-6 md:hidden"
         }
+        ref={navbarRef}
       >
         <li className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer">
           <Link onClick={closeHandler} to="intro" smooth={true} duration={500}>
@@ -134,9 +157,7 @@ function Navbar() {
           <div
             onClick={handleThemeButton}
             className={
-              theme === "dark"
-                ? "w-fit bg-orange-300 p-2 rounded-md"
-                : "hidden"
+              theme === "dark" ? "w-fit bg-orange-300 p-2 rounded-md" : "hidden"
             }
           >
             <SunIcon className="w-5" fill="none" stroke="#fff" />
