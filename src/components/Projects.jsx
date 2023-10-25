@@ -1,5 +1,3 @@
-import newsApp from "../assets/img/news-comp-app.png";
-import ecomSite from "../assets/img/ecom-site.png";
 import classes from "./Project.module.css";
 
 const Projects = () => {
@@ -14,6 +12,7 @@ const Projects = () => {
             className={classes.newsComp}
             href="https://github.com/ethanliu666/news-comp-app"
             target="_blank"
+            rel="noopener noreferrer"
           >
             {/* <img
             src={newsApp}
