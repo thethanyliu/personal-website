@@ -5,6 +5,7 @@ import {
   Marker,
 } from "react-simple-maps";
 import { useState } from "react";
+import features from "./features.json";
 
 const markers = [
   {
@@ -65,12 +66,10 @@ const markers = [
     coordinates: [-120.2377, 55.7596],
   },
 ];
-const geoUrl =
-  "https://raw.githubusercontent.com/deldersveld/topojson/master/world-continents.json";
 
 function Map() {
   const offset = -10;
-  const textStyle = {fill: "#fff", fontSize: 10};
+  const textStyle = { fill: "#fff", fontSize: 10 };
   const radius = 2.5;
   const strokeWidth = 1.5;
   const strokeColor = "#0c2431";
@@ -156,10 +155,14 @@ function Map() {
   return (
     <>
       <ComposableMap>
-        <Geographies geography={geoUrl}>
+        <Geographies geography={features}>
           {({ geographies }) =>
             geographies.map((geo) => (
-              <Geography className="fill-[#6e6b6b] dark:fill-[#d37559]" key={geo.rsmKey} geography={geo} />
+              <Geography
+                className="fill-[#6e6b6b] dark:fill-[#d37559]"
+                key={geo.rsmKey}
+                geography={geo}
+              />
             ))
           }
         </Geographies>
@@ -169,7 +172,12 @@ function Map() {
           onMouseEnter={toggleOne}
           onMouseLeave={toggleOne}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth} />
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          />
           <text
             textAnchor="middle"
             y={offset}
@@ -185,7 +193,12 @@ function Map() {
           onMouseEnter={toggleTwo}
           onMouseLeave={toggleTwo}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth} />
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          />
           <text
             textAnchor="middle"
             y={offset}
@@ -201,7 +214,12 @@ function Map() {
           onMouseEnter={toggleThree}
           onMouseLeave={toggleThree}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          ></circle>
           <text
             textAnchor="middle"
             y={offset}
@@ -217,7 +235,12 @@ function Map() {
           onMouseEnter={toggleFour}
           onMouseLeave={toggleFour}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          ></circle>
           <text
             textAnchor="middle"
             y={offset}
@@ -233,7 +256,12 @@ function Map() {
           onMouseEnter={toggleFive}
           onMouseLeave={toggleFive}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          ></circle>
           <text
             textAnchor="middle"
             y={offset}
@@ -249,7 +277,12 @@ function Map() {
           onMouseEnter={toggleSix}
           onMouseLeave={toggleSix}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          ></circle>
           <text
             textAnchor="middle"
             y={offset}
@@ -265,7 +298,12 @@ function Map() {
           onMouseEnter={toggleSeven}
           onMouseLeave={toggleSeven}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          ></circle>
           <text
             textAnchor="middle"
             y={offset}
@@ -281,7 +319,12 @@ function Map() {
           onMouseEnter={toggleEight}
           onMouseLeave={toggleEight}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          ></circle>
           <text
             textAnchor="middle"
             y={offset}
@@ -297,7 +340,12 @@ function Map() {
           onMouseEnter={toggleNine}
           onMouseLeave={toggleNine}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          ></circle>
           <text
             textAnchor="middle"
             y={offset}
@@ -313,7 +361,12 @@ function Map() {
           onMouseEnter={toggleTen}
           onMouseLeave={toggleTen}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          ></circle>
           <text
             textAnchor="middle"
             y={offset}
@@ -329,7 +382,12 @@ function Map() {
           onMouseEnter={toggleEleven}
           onMouseLeave={toggleEleven}
         >
-          <circle r={radius} fill="#fff" stroke={strokeColor} strokeWidth={strokeWidth}></circle>
+          <circle
+            r={radius}
+            fill="#fff"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          ></circle>
           <text
             textAnchor="middle"
             y={offset}

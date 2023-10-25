@@ -5,7 +5,9 @@ function TechItem(props) {
         <img src={props.image} alt="logo" width="50px" height="50px" />
       </div>
       <div>
-        <h1 className="text-center text-xl text-gray-800 font-semibold pt-3">{props.title}</h1>
+        <h1 className="text-center text-xl text-gray-800 font-semibold pt-3">
+          {props.title}
+        </h1>
       </div>
     </div>
   );

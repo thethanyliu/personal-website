@@ -9,7 +9,6 @@ import bash from "../../assets/logos/bash.png";
 import docker from "../../assets/logos/docker.png";
 
 function Tech() {
-
   const tech = [
     {
       id: "t1",

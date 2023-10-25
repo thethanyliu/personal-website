@@ -37,13 +37,13 @@
 }
 
 @media (min-width: 1440px) {
-    .newsComp {
-        width: 500px;
-        height: 250px;
-    }
+  .newsComp {
+    width: 500px;
+    height: 250px;
+  }
 
-    .ecomSite {
-        width: 500px;
-        height: 250px;
-    }
+  .ecomSite {
+    width: 500px;
+    height: 250px;
+  }
 }

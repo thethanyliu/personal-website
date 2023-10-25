@@ -29,6 +29,7 @@ const Projects = () => {
             href="https://github.com/ethanliu666/news-comp-app"
             target="_blank"
             className="cursor-pointer text-xl pb-3 font-semibold"
+            rel="noopener noreferrer"
           >
             <h2>News Comparison App</h2>
           </a>
@@ -45,6 +46,7 @@ const Projects = () => {
             href="https://ecom-ethanliu666.vercel.app/"
             target="_blank"
             className="cursor-pointer text-xl pb-3 font-semibold"
+            rel="noopener noreferrer"
           >
             <h2>Lightroom Presets E-commerce Site</h2>
           </a>
@@ -52,16 +54,12 @@ const Projects = () => {
             An e-commerce store selling my personal custom Lightroom Presets.
           </p>
         </div>
-        <a
-          className={classes.ecomSite}
-          href="https://ecom-ethanliu666.vercel.app/"
-          target="_blank"
-        ></a>
         <div className="flex flex-col md:hidden pb-5 pt-8 px-2 md:px-0">
           <a
             href="https://ecom-ethanliu666.vercel.app/"
             target="_blank"
             className="cursor-pointer text-xl pb-3 font-semibold"
+            rel="noopener noreferrer"
           >
             <h2>Lightroom Presets E-commerce Site</h2>
           </a>

@@ -4,8 +4,8 @@ import Instadark from "../assets/logos/insta-logo-dark.png";
 
 function AboutSection() {
   const instaButtonClick = () => {
-    analyticsEventTracker("Instagram", "Clicked Insta")
-  }
+    analyticsEventTracker("Instagram", "Clicked Insta");
+  };
 
   return (
     <div
@@ -24,6 +24,7 @@ function AboutSection() {
           className="flex transition ease-in-out delay-150 hover:translate-x-[8px] pt-5 pb-1 text-left uppercase tracking-wider border-b-2 dark:border-white border-stone-800 cursor-pointer"
           href="https://www.instagram.com/ethanliu8/"
           target="_blank"
+          rel="noopener noreferrer"
           onClick={() => instaButtonClick()}
         >
           Say hello
