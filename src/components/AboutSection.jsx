@@ -46,7 +46,7 @@ function AboutSection() {
       </div>
       <div className="flex my-8 mx-5">
         <p className="text-lg">
-          Hi there, I'm Ethan, I am a first year CS student at the University of
+          Hi there, I'm Ethan, I am a second year CS student at the University of
           Waterloo currently working on web dev. In my free time I enjoy
           watching The Man in the High Castle and playing basketball. Feel free
           to hang around as long as you like.
