@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import Typical from "react-typical";
+import { TypeAnimation } from 'react-type-animation';
 import Bgifdark from "../assets/img/bgif-dark.gif";
 import Bgiflight from "../assets/img/bgif-light.gif";
 
@@ -20,9 +20,9 @@ function IntroSection() {
           An aspiring software developer who can maybe be the CSS for your HTML.
         </span>
         <span className="absolute top-[-30px] lg:top-[-50px] text-[4rem] lg:text-[6rem] font-bold z-2 dark:text-[#113245] text-[#afb0b4] tracking-wide">
-          <Typical
-            steps={["Software", 1500, "Devploper", 2000]}
-            loop={Infinity}
+          <TypeAnimation
+            sequence={["Software", 1500, "Devploper", 2000]}
+            repeat={Infinity}
             wrapper="b"
           />
         </span>
