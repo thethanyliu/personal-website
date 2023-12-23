@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm install
+      - npm install --legacy-peer-deps
   build:
     commands:
       - npm run build
