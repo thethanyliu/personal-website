@@ -7,6 +7,11 @@
 
 <a id="overview"></a>
 ## Overview
+Welcome to the documentation for Ethan Liu's static portfolio website, hosted on AWS S3. The implementation and design decisions made throughout the development lifecycle achieves the following:
+
+* Stack website hosting on AWS S3 with a root domain and subdomain bucket where the subdomain redirects to the root domain.
+* Implemented HTTPS support across the board for enhanced security through a public SSL/TLS certificate provided by AWS Certificate Manager.
+* Implemented CD/CI pipeline with AWS CodePipeline, AWS CodeBuild and AWS Lambda for automated builds, deployments and cache invalidation.
 
 <a id="architecture-diagram"></a>
 ## Architecture Diagram
