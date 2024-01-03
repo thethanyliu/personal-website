@@ -28,7 +28,7 @@ function IntroSection() {
         </span>
         <button className="transition ease-in-out delay-150 hover:translate-x-[8px] text-left uppercase tracking-wider border-b-[1px] dark:border-zinc-300 border-stone-800 pb-2">
           <Link to="about" smooth={true} duration={500} offset={-75}>
-            Scroll for more
+            Learn more
           </Link>
         </button>
       </div>
