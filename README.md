@@ -11,6 +11,7 @@ Welcome to the documentation for Ethan Liu's static portfolio website, hosted on
 
 * Stack website hosting on AWS S3 with a root domain and subdomain bucket where the subdomain redirects to the root domain.
 * Implemented HTTPS support across the board for enhanced security through a public SSL/TLS certificate provided by AWS Certificate Manager.
+* Utilized AWS Route 53 for DNS routing and network traffic management.
 * Implemented CD/CI pipeline with AWS CodePipeline, AWS CodeBuild and AWS Lambda for automated builds, deployments and cache invalidation.
 
 <a id="architecture-diagram"></a>
