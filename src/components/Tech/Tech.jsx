@@ -1,19 +1,39 @@
 import TechItem from "./TechItem";
-import rea from "../../assets/logos/react.png";
-import flask from "../../assets/logos/flask.png";
+import next from "../../assets/logos/nextjs.png";
+import prisma from "../../assets/logos/prisma.png";
+import aws from "../../assets/logos/aws.png";
 import git from "../../assets/logos/git.png";
 import github from "../../assets/logos/github.png";
-import sql from "../../assets/logos/mysql.png";
-import tailwind from "../../assets/logos/tailwindcss.png";
+import sql from "../../assets/logos/postgreSQL.png";
+import tailwind from "../../assets/logos/tailwind.png";
 import bash from "../../assets/logos/bash.png";
-import docker from "../../assets/logos/docker.png";
 
 function Tech() {
   const tech = [
     {
       id: "t1",
-      title: "React",
-      image: rea,
+      title: "Next JS",
+      image: next,
+    },
+    {
+      id: "t7",
+      title: "Prisma",
+      image: prisma,
+    },
+    {
+      id: "t8",
+      title: "AWS",
+      image: aws,
+    },
+    {
+      id: "t5",
+      title: "Tailwind CSS",
+      image: tailwind,
+    },
+    {
+      id: "t6",
+      title: "Bash",
+      image: bash,
     },
     {
       id: "t2",
@@ -29,26 +49,6 @@ function Tech() {
       id: "t4",
       title: "MySQL",
       image: sql,
-    },
-    {
-      id: "t5",
-      title: "Tailwind CSS",
-      image: tailwind,
-    },
-    {
-      id: "t6",
-      title: "Bash",
-      image: bash,
-    },
-    {
-      id: "t7",
-      title: "Docker",
-      image: docker,
-    },
-    {
-      id: "t8",
-      title: "Flask",
-      image: flask,
     },
   ];
 

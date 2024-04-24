@@ -1,13 +1,12 @@
 import { Link } from "react-scroll";
 import { TypeAnimation } from 'react-type-animation';
-import Bgifdark from "../assets/img/bgif-dark.gif";
-import Bgiflight from "../assets/img/bgif-light.gif";
+import Bitmoji from "../assets/img/bitmoji.png";
 
 function IntroSection() {
   return (
     <div
       name="intro"
-      className="grid md:grid-cols-2 justify-between w-full h-screen pl-4 md:px-4 lg:px-32 xl:px-56"
+      className="introBackground grid md:grid-cols-2 justify-between w-full h-screen pl-4 md:px-4 lg:px-32 xl:px-56"
     >
       <div className="flex flex-col relative justify-center items-start m-auto">
         <span className="z-10 text-md text-left font-bold w-full">
@@ -35,12 +34,12 @@ function IntroSection() {
       <div className="hidden md:flex pr-5 justify-center items-center">
         <img
           className="hidden dark:flex rounded-md"
-          src={Bgifdark}
+          src={Bitmoji}
           alt="hello gif"
         />
         <img
           className="flex dark:hidden rounded-md"
-          src={Bgiflight}
+          src={Bitmoji}
           alt="hello gif"
         />
       </div>

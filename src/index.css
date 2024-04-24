@@ -12,6 +12,14 @@ body {
   background-color: "storm";
 }
 
+.introBackground {
+  background-image: url("./assets/bg/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 /* Toggle switch */
 .toggledark {
   background-image: linear-gradient(#be375f, #d8a28c);
