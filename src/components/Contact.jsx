@@ -1,4 +1,4 @@
-import { analyticsEventTracker } from "./analyticsEventTracker";
+import { analyticsEventTracker } from "../utils/analyticsEventTracker";
 import email from "../assets/img/gmail.png";
 
 const Contact = () => {
