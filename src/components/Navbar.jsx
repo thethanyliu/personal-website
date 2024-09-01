@@ -13,6 +13,13 @@ function Navbar() {
   const [nav, setNav] = useState(false);
   const [theme, setTheme] = useState("dark");
 
+  const menu = [
+    { title: "Home", name: "intro" },
+    { title: "About", name: "about" },
+    { title: "Tech", name: "tech" },
+    { title: "Contact", name: "contact" },
+  ];
+
   const navbarRef = useRef();
 
   const clickHandler = (e) => {
@@ -35,14 +42,6 @@ function Navbar() {
     }
   }, [theme]);
 
-  function navHandler() {
-    setNav(!nav);
-  }
-
-  function closeHandler() {
-    setNav(!nav);
-  }
-
   function handleThemeButton() {
     if (theme === "dark") {
       setTheme("light");
@@ -62,26 +61,13 @@ function Navbar() {
             height="65px"
           />
           <ul className="hidden md:flex font-burtons">
-            <li className="cursor-pointer">
-              <Link to="intro" smooth={true} duration={500}>
-                Home
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link to="about" smooth={true} duration={500} offset={-50}>
-                About
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link to="tech" smooth={true} duration={500} offset={-100}>
-                Tech
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link to="contact" smooth={true} duration={500} offset={-100}>
-                Contact
-              </Link>
-            </li>
+            {menu.map((item, i) => (
+              <li className="cursor-pointer" key={i}>
+                <Link to={item.name} smooth={true} duration={500}>
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div
@@ -104,7 +90,7 @@ function Navbar() {
         >
           <MoonIcon className="w-5" fill="none" />
         </div>
-        <div className="md:hidden mr-3" onClick={navHandler}>
+        <div className="md:hidden mr-3" onClick={() => setNav((prev) => !prev)}>
           {!nav ? (
             <Bars3Icon
               className="w-5"
@@ -128,31 +114,21 @@ function Navbar() {
         }
         ref={navbarRef}
       >
-        <li className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer">
-          <Link onClick={closeHandler} to="intro" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer">
-          <Link onClick={closeHandler} to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer">
-          <Link onClick={closeHandler} to="tech" smooth={true} duration={500}>
-            Tech
-          </Link>
-        </li>
-        <li className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer">
-          <Link
-            onClick={closeHandler}
-            to="contact"
-            smooth={true}
-            duration={500}
+        {menu.map((item, i) => (
+          <li
+            className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer"
+            key={i}
           >
-            Contact
-          </Link>
-        </li>
+            <Link
+              onClick={() => setNav((prev) => !prev)}
+              to={item.name}
+              smooth={true}
+              duration={500}
+            >
+              {item.title}
+            </Link>
+          </li>
+        ))}
         <li className="flex">
           <div
             onClick={handleThemeButton}
