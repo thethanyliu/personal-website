@@ -78,7 +78,7 @@ function Navbar() {
               : "hidden"
           }
         >
-          <SunIcon className="w-5" fill="none" stroke="#fff" />
+          <SunIcon className="w-5 cursor-pointer" fill="none" stroke="#fff" />
         </div>
         <div
           onClick={handleThemeButton}
@@ -88,7 +88,7 @@ function Navbar() {
               : "hidden"
           }
         >
-          <MoonIcon className="w-5" fill="none" />
+          <MoonIcon className="w-5 cursor-pointer" fill="none" />
         </div>
         <div className="md:hidden mr-3" onClick={() => setNav((prev) => !prev)}>
           {!nav ? (
@@ -136,7 +136,7 @@ function Navbar() {
               theme === "dark" ? "w-fit bg-orange-300 p-2 rounded-md" : "hidden"
             }
           >
-            <SunIcon className="w-5" fill="none" stroke="#fff" />
+            <SunIcon className="w-5 cursor-pointer" fill="none" stroke="#fff" />
           </div>
           <div
             onClick={handleThemeButton}
@@ -146,7 +146,7 @@ function Navbar() {
                 : "hidden"
             }
           >
-            <MoonIcon className="w-5" fill="none" />
+            <MoonIcon className="w-5 cursor-pointer" fill="none" />
           </div>
         </li>
       </ul>
