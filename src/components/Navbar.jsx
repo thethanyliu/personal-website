@@ -93,13 +93,13 @@ function Navbar() {
         <div className="md:hidden mr-3" onClick={() => setNav((prev) => !prev)}>
           {!nav ? (
             <Bars3Icon
-              className="w-5"
+              className="w-5 cursor-pointer"
               fill="none"
               stroke={theme === "dark" ? "#d4d4d8" : "#1a120b"}
             />
           ) : (
             <XCircleIcon
-              className="w-5"
+              className="w-5 cursor-pointer"
               fill="none"
               stroke={theme === "dark" ? "#d4d4d8" : "#1a120b"}
             />
