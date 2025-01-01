@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 import Bitmoji from "../assets/img/bitmoji.png";
 
 function IntroSection() {
@@ -16,7 +16,7 @@ function IntroSection() {
           Ethan Liu<span className="text-[#999999] dark:text-cloud">.</span>
         </span>
         <span className="text-left text-lg w-full pb-5">
-          An aspiring software developer who can maybe be the CSS for your HTML.
+          A software developer who can maybe be the CSS for your HTML.
         </span>
         <span className="absolute top-[-30px] lg:top-[-50px] text-[4rem] lg:text-[6rem] font-bold z-2 dark:text-[#113245] text-[#afb0b4] tracking-wide">
           <TypeAnimation
