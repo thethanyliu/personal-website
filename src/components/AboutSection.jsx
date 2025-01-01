@@ -47,9 +47,8 @@ function AboutSection() {
       <div className="flex my-8 mx-5">
         <p className="text-lg">
           Hi there, I'm Ethan, I am a third year CS student at the University of
-          Waterloo currently working on web dev. In my free time I enjoy
-          watching The Man in the High Castle and playing basketball. Feel free
-          to hang around as long as you like.
+          Waterloo. That&rsquo;s it, that&rsquo;s really all I have to say, but
+          do feel free to hang around as long as you like.
         </p>
       </div>
     </div>
