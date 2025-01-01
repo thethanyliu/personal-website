@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="flex flex-col items-center pb-20 px-5 md:px-20 lg:px-52"
+      className="flex flex-col items-center py-16 px-5 md:px-20 lg:px-52"
     >
       <>
         <a

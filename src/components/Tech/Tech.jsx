@@ -53,10 +53,7 @@ function Tech() {
   ];
 
   return (
-    <div
-      name="tech"
-      className="flex flex-col pb-24 pt-8 px-5 md:px-24 lg:px-36 xl:px-60"
-    >
+    <div name="tech" className="flex flex-col px-5 md:px-24 lg:px-36 xl:px-60">
       <div>
         <h1 className="text-3xl font-semibold drop-shadow-md">
           What I Work With

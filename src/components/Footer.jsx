@@ -21,11 +21,6 @@ function Footer() {
           <img src={Githubblue} alt="github" width="30px" height="30px" />
         </a>
       </div>
-      <div className="text-center">
-        <h2 className="dark:text-[#a9a9a9] text-md font-mono pb-3">
-          &copy; Created by Ethan Liu. All Rights Reserved.
-        </h2>
-      </div>
     </div>
   );
 }
