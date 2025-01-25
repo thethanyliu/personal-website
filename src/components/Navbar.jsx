@@ -6,19 +6,13 @@ import {
   SunIcon,
   XCircleIcon,
 } from "@heroicons/react/24/outline";
+import { NAVBAR_MENU } from "./Constants";
 import logolight from "../assets/img/logo-light.png";
 import logodark from "../assets/img/logo-black.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [theme, setTheme] = useState("dark");
-
-  const menu = [
-    { title: "Home", name: "intro" },
-    { title: "About", name: "about" },
-    { title: "Tech", name: "tech" },
-    { title: "Contact", name: "contact" },
-  ];
 
   const navbarRef = useRef();
 
@@ -61,7 +55,7 @@ function Navbar() {
             height="65px"
           />
           <ul className="hidden md:flex font-burtons">
-            {menu.map((item, i) => (
+            {NAVBAR_MENU.map((item, i) => (
               <li className="cursor-pointer" key={i}>
                 <Link to={item.name} smooth={true} duration={500}>
                   {item.title}
@@ -114,7 +108,7 @@ function Navbar() {
         }
         ref={navbarRef}
       >
-        {menu.map((item, i) => (
+        {NAVBAR_MENU.map((item, i) => (
           <li
             className="border-b-2 border-stone-900 dark:border-zinc-300 cursor-pointer"
             key={i}

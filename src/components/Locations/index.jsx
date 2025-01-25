@@ -20,7 +20,7 @@ function Locations() {
     >
       <>
         <h1 className="text-4xl font-semibold text-center py-10">
-          Where to Next
+          Where to Next?
         </h1>
 
         <div

@@ -1,0 +1,40 @@
+import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import { WORK_INFORMATION } from "../Constants";
+import { ReactComponent as WorkIcon } from "../../assets/img/work.svg";
+import "react-vertical-timeline-component/style.min.css";
+
+const Work = () => {
+  return (
+    <div name="work" className="flex flex-col my-8">
+      <h1 className="text-4xl font-semibold text-center py-10">
+        Work Experience
+      </h1>
+      <VerticalTimeline>
+        {WORK_INFORMATION.map((work, index) => (
+          <VerticalTimelineElement
+            key={index}
+            icon={<WorkIcon />}
+            iconStyle={{ background: "#afafaf" }}
+            date={`${work.time.start} - ${
+              work.time.isCurrent ? "Present" : work.time.end
+            }`}
+            className="vertical-timeline-element"
+          >
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-normal dark:text-stone-900 tracking-wider">
+                {work.title}
+              </h3>
+              <span className="dark:text-stone-900">{work.desc}</span>
+            </div>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
+    </div>
+  );
+};
+
+export default Work;
