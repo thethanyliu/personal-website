@@ -56,9 +56,10 @@ function AboutSection() {
           free to hang around as long as you like and always do feel free to{" "}
           <Link to={"contact"} smooth={true} duration={500}>
             <span className="cursor-pointer font-semibold underline">
-              reach out.
+              reach out
             </span>
           </Link>
+          .
         </p>
       </div>
     </div>
