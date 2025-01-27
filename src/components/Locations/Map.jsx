@@ -33,7 +33,7 @@ function Map() {
       </Geographies>
       {MAP_MARKERS.map((marker, index) => (
         <Marker
-          key={marker.id}
+          key={index}
           coordinates={marker.coordinates}
           onMouseEnter={() => dispatch({ type: index })}
           onMouseLeave={() => dispatch({ type: index })}

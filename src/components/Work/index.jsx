@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Work = () => {
   const { isTimelineCollapsed } = useIsTimelineCollapsed();
+  console.log(isTimelineCollapsed);
 
   return (
     <div name="work" className="flex flex-col my-8">
@@ -25,8 +26,10 @@ const Work = () => {
             date={`${work.time.start} - ${
               work.time.isCurrent ? "Present" : work.time.end
             }`}
-            dateClassName={`text-stone-900 dark:${
-              isTimelineCollapsed ? "text-stone-900" : "text-slate-200"
+            dateClassName={`text-stone-900 ${
+              isTimelineCollapsed
+                ? "dark:text-stone-900"
+                : "dark:text-slate-200"
             }`}
             className="vertical-timeline-element"
           >
