@@ -6,6 +6,7 @@ import {
 import { useIsTimelineCollapsed } from "../../utils/hook";
 import { WORK_INFORMATION } from "../Constants";
 import { ReactComponent as WorkIcon } from "../../assets/img/work.svg";
+import "react-vertical-timeline-component/style.min.css";
 
 const Work = () => {
   const { isTimelineCollapsed } = useIsTimelineCollapsed();
