@@ -3,17 +3,19 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { useIsTimelineCollapsed } from "../../utils/hook";
 import { WORK_INFORMATION } from "../Constants";
 import { ReactComponent as WorkIcon } from "../../assets/img/work.svg";
-import "react-vertical-timeline-component/style.min.css";
 
 const Work = () => {
+  const { isTimelineCollapsed } = useIsTimelineCollapsed();
+
   return (
     <div name="work" className="flex flex-col my-8">
       <h1 className="text-4xl font-semibold text-center py-10">
         Work Experience
       </h1>
-      <VerticalTimeline>
+      <VerticalTimeline animate={false}>
         {WORK_INFORMATION.map((work, index) => (
           <VerticalTimelineElement
             key={index}
@@ -21,6 +23,9 @@ const Work = () => {
             iconStyle={{ background: "#afafaf" }}
             date={`${work.time.start} - ${
               work.time.isCurrent ? "Present" : work.time.end
+            }`}
+            dateClassName={`text-stone-900 dark:${
+              isTimelineCollapsed ? "text-stone-900" : "text-slate-200"
             }`}
             className="vertical-timeline-element"
           >
