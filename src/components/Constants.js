@@ -1,4 +1,4 @@
-import next from "../assets/logos/nextjs.png";
+import reactLogo from "../assets/logos/reactjs.png";
 import prisma from "../assets/logos/prisma.png";
 import aws from "../assets/logos/aws.png";
 import git from "../assets/logos/git.png";
@@ -129,12 +129,17 @@ export const MAP_MARKERS = [
 
 export const WORK_INFORMATION = [
   {
-    title: "Frontend Software Engineer Intern @Carta Inc.",
-    time: { start: "Jan. 2025", end: "", isCurrent: true },
+    title: "Software Engineer Intern @Ramp",
+    time: { start: "May 2025", end: "", isCurrent: true },
     desc: "TypeScript | React.js",
   },
   {
-    title: "Software Engineer Intern (Frontend Platform) @Carta Inc.",
+    title: "Software Engineer Intern (Design Systems) @Carta",
+    time: { start: "Jan. 2025", end: "Apr. 2025", isCurrent: false },
+    desc: "TypeScript | React.js",
+  },
+  {
+    title: "Software Engineer Intern (Frontend Platform) @Carta",
     time: { start: "May 2024", end: "Aug. 2024", isCurrent: false },
     desc: "TypeScript | CircleCI | Docker | Python",
   },
@@ -157,8 +162,8 @@ export const WORK_INFORMATION = [
 
 export const TECH_STACK = [
   {
-    title: "Next JS",
-    image: next,
+    title: "React JS",
+    image: reactLogo,
   },
   {
     title: "Prisma",
