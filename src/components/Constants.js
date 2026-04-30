@@ -1,9 +1,8 @@
 export const NAVBAR_MENU = [
   { title: "Home", name: "intro" },
-  { title: "Work", name: "work" },
   { title: "About", name: "about" },
-  { title: "Tech", name: "tech" },
-  { title: "Contact", name: "contact" },
+  { title: "Work", name: "work" },
+  { title: "Places", name: "places" },
 ];
 
 export const TIMELINE_ELEMENTS = [
