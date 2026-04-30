@@ -1,12 +1,3 @@
-import reactLogo from "../assets/logos/reactjs.png";
-import prisma from "../assets/logos/prisma.png";
-import aws from "../assets/logos/aws.png";
-import git from "../assets/logos/git.png";
-import github from "../assets/logos/github.png";
-import sql from "../assets/logos/postgreSQL.png";
-import tailwind from "../assets/logos/tailwind.png";
-import bash from "../assets/logos/bash.png";
-
 export const NAVBAR_MENU = [
   { title: "Home", name: "intro" },
   { title: "Work", name: "work" },
@@ -152,45 +143,5 @@ export const WORK_INFORMATION = [
     title: "Full Stack Engineer @Ojje Inc.",
     time: { start: "Jun. 2023", end: "Sept. 2023", isCurrent: false },
     desc: "JavaScript | React.js",
-  },
-  {
-    title: "Technology Consulting Assistant @Creospark",
-    time: { start: "May 2023", end: "Aug. 2023", isCurrent: false },
-    desc: "Microsoft Power Platform",
-  },
-];
-
-export const TECH_STACK = [
-  {
-    title: "React JS",
-    image: reactLogo,
-  },
-  {
-    title: "Prisma",
-    image: prisma,
-  },
-  {
-    title: "AWS",
-    image: aws,
-  },
-  {
-    title: "Tailwind CSS",
-    image: tailwind,
-  },
-  {
-    title: "Bash",
-    image: bash,
-  },
-  {
-    title: "Github",
-    image: github,
-  },
-  {
-    title: "Git",
-    image: git,
-  },
-  {
-    title: "MySQL",
-    image: sql,
   },
 ];

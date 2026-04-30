@@ -1,10 +1,7 @@
-import React from "react";
 import IntroSection from "./IntroSection";
 import AboutSection from "./AboutSection";
 import Navbar from "./Navbar";
-import Tech from "./Tech/Tech";
 import Locations from "./Locations";
-import Contact from "./Contact";
 import Footer from "./Footer";
 import Work from "./Work";
 
@@ -16,8 +13,6 @@ const MainView = () => {
       <AboutSection />
       <Work />
       <Locations />
-      <Tech />
-      <Contact />
       <Footer />
     </div>
   );

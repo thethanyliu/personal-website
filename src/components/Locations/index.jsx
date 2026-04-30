@@ -14,9 +14,7 @@ function Locations() {
   return (
     <div
       name="places"
-      className={`flex flex-col pt-8 px-5 ${
-        toggle ? "pb-8 md:pb-12" : "pb-0"
-      } md:px-20 lg:px-42 xl:px-56`}
+      className={`flex flex-col pt-8 px-5 md:px-20 lg:px-42 xl:px-56`}
     >
       <>
         <h1 className="text-4xl font-semibold text-center py-10">
